@@ -1,4 +1,3 @@
-```markdown
 <div align="center">
 
 # PROJECT SENTINEL
@@ -70,19 +69,18 @@ Cameroon faces complex security challenges including the Anglophone crisis, Boko
 
 Project Sentinel addresses these challenges through:
 
-```
-
 ┌─────────────────────────────────────────────────────────────────┐
-│  BEFORE SENTINEL          →          AFTER SENTINEL             │
+│ BEFORE SENTINEL → AFTER SENTINEL │
 ├─────────────────────────────────────────────────────────────────┤
-│  24-hour intelligence delay  →  <2 second real-time processing  │
-│  5 analysts required         →  2 analysts with AI assistance   │
-│  Manual threat correlation   →  Automated AI classification     │
-│  Fragmented data sources     →  15+ integrated sources          │
-│  Reactive response           →  Predictive threat forecasting   │
+│ 24-hour intelligence delay → <2 second real-time processing │
+│ 5 analysts required → 2 analysts with AI assistance │
+│ Manual threat correlation → Automated AI classification │
+│ Fragmented data sources → 15+ integrated sources │
+│ Reactive response → Predictive threat forecasting │
 └─────────────────────────────────────────────────────────────────┘
 
-```
+yaml
+Copy code
 
 **Quantifiable Impact:**
 - 300% increase in threat detection speed
@@ -96,64 +94,63 @@ Project Sentinel addresses these challenges through:
 
 ### High-Level Architecture
 
-```
-
 ┌────────────────────────────────────────────────────────────────────────┐
-│                         PROJECT SENTINEL ARCHITECTURE                   │
+│ PROJECT SENTINEL ARCHITECTURE │
 └────────────────────────────────────────────────────────────────────────┘
 
 ┌─────────────────────────────────────────────────────────────────────────┐
-│                          DATA INGESTION LAYER                            │
+│ DATA INGESTION LAYER │
 ├──────────────┬──────────────┬──────────────┬──────────────┬────────────┤
-│  RSS Feeds   │ Social Media │   News APIs  │ Field Reports│  YouTube   │
-│  (12 sources)│  (Twitter/FB)│ (3 govt APIs)│  (Manual)    │ (Channels) │
+│ RSS Feeds │ Social Media │ News APIs │ Field Reports│ YouTube │
+│ (12 sources)│ (Twitter/FB)│ (3 govt APIs)│ (Manual) │ (Channels) │
 └──────┬───────┴──────┬───────┴──────┬───────┴──────┬───────┴──────┬─────┘
-│              │              │              │              │
+│ │ │ │ │
 └──────────────┴──────────────┴──────────────┴──────────────┘
 │
 ▼
 ┌─────────────────────────────────────────────────────────────────────────┐
-│                        PROCESSING & ANALYSIS LAYER                       │
+│ PROCESSING & ANALYSIS LAYER │
 ├─────────────────────────────────────────────────────────────────────────┤
-│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐  ┌─────────────┐│
-│  │   NLP Engine │  │ ML Classifier│  │ Geospatial   │  │  Prophet    ││
-│  │  (Sentiment) │  │  (94.2% acc) │  │   Analysis   │  │ Forecasting ││
-│  └──────────────┘  └──────────────┘  └──────────────┘  └─────────────┘│
+│ ┌──────────────┐ ┌──────────────┐ ┌──────────────┐ ┌─────────────┐│
+│ │ NLP Engine │ │ ML Classifier│ │ Geospatial │ │ Prophet ││
+│ │ (Sentiment) │ │ (94.2% acc) │ │ Analysis │ │ Forecasting ││
+│ └──────────────┘ └──────────────┘ └──────────────┘ └─────────────┘│
 └─────────────────────────────────────────────────────────────────────────┘
 │
 ▼
 ┌─────────────────────────────────────────────────────────────────────────┐
-│                          DATA STORAGE LAYER                              │
+│ DATA STORAGE LAYER │
 ├─────────────────────────────────────────────────────────────────────────┤
-│  ┌──────────────────┐         ┌──────────────────┐                     │
-│  │  PostgreSQL 15   │         │    Redis 6       │                     │
-│  │  (Primary DB)    │         │  (Caching/Queue) │                     │
-│  └──────────────────┘         └──────────────────┘                     │
+│ ┌──────────────────┐ ┌──────────────────┐ │
+│ │ PostgreSQL 15 │ │ Redis 6 │ │
+│ │ (Primary DB) │ │ (Caching/Queue) │ │
+│ └──────────────────┘ └──────────────────┘ │
 └─────────────────────────────────────────────────────────────────────────┘
 │
 ▼
 ┌─────────────────────────────────────────────────────────────────────────┐
-│                        APPLICATION LAYER                                 │
+│ APPLICATION LAYER │
 ├─────────────────────────────────────────────────────────────────────────┤
-│  ┌──────────────────┐         ┌──────────────────┐                     │
-│  │  Django REST API │         │  FastAPI ML API  │                     │
-│  │  (Port 8000)     │         │  (Port 8001)     │                     │
-│  └──────────────────┘         └──────────────────┘                     │
+│ ┌──────────────────┐ ┌──────────────────┐ │
+│ │ Django REST API │ │ FastAPI ML API │ │
+│ │ (Port 8000) │ │ (Port 8001) │ │
+│ └──────────────────┘ └──────────────────┘ │
 └─────────────────────────────────────────────────────────────────────────┘
 │
 ▼
 ┌─────────────────────────────────────────────────────────────────────────┐
-│                        PRESENTATION LAYER                                │
+│ PRESENTATION LAYER │
 ├─────────────────────────────────────────────────────────────────────────┤
-│  ┌────────────────────────────────────────────────────────────────┐    │
-│  │         React 18 + TypeScript Frontend (Port 3000)             │    │
-│  │  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌──────────┐      │    │
-│  │  │Dashboard │  │Geospatial│  │Analytics │  │  Reports │      │    │
-│  │  └──────────┘  └──────────┘  └──────────┘  └──────────┘      │    │
-│  └────────────────────────────────────────────────────────────────┘    │
+│ ┌────────────────────────────────────────────────────────────────┐ │
+│ │ React 18 + TypeScript Frontend (Port 3000) │ │
+│ │ ┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────┐ │ │
+│ │ │Dashboard │ │Geospatial│ │Analytics │ │ Reports │ │ │
+│ │ └──────────┘ └──────────┘ └──────────┘ └──────────┘ │ │
+│ └────────────────────────────────────────────────────────────────┘ │
 └─────────────────────────────────────────────────────────────────────────┘
 
-```
+sql
+Copy code
 
 <div align="center">
 <img src="https://github.com/user-attachments/assets/f1f741a7-fdad-4759-9ddc-82aab7e41f9b" alt="Detailed Architecture" width="100%"/>
@@ -190,8 +187,6 @@ The system employs a microservices architecture for scalability, fault isolation
 
 **Integrated Data Sources:**
 
-```
-
 RSS Feeds (12 sources)
 ├── Government News Portals
 ├── Regional Security Bulletins
@@ -213,7 +208,8 @@ Manual Intelligence
 ├── Citizen Tips (Secure Portal)
 └── Inter-Agency Sharing
 
-```
+markdown
+Copy code
 
 **Collection Performance:**
 - **Throughput**: 10,000+ records per minute
@@ -225,40 +221,39 @@ Manual Intelligence
 
 **Machine Learning Pipeline:**
 
-```
-
 ┌──────────────────────────────────────────────────────────────┐
-│                    ML PROCESSING PIPELINE                     │
+│ ML PROCESSING PIPELINE │
 └──────────────────────────────────────────────────────────────┘
 
 Input Data
 │
 ▼
 ┌─────────────────────┐
-│  Text Preprocessing │  → Tokenization, Normalization, Cleaning
+│ Text Preprocessing │ → Tokenization, Normalization, Cleaning
 └──────────┬──────────┘
 │
 ▼
 ┌─────────────────────┐
-│  NLP Analysis       │  → Sentiment, Entity Recognition, Language
+│ NLP Analysis │ → Sentiment, Entity Recognition, Language
 └──────────┬──────────┘
 │
 ▼
 ┌─────────────────────┐
-│  Threat Classifier  │  → Random Forest, SVM, Neural Networks
-└──────────┬──────────┘    (94.2% Accuracy)
+│ Threat Classifier │ → Random Forest, SVM, Neural Networks
+└──────────┬──────────┘ (94.2% Accuracy)
 │
 ▼
 ┌─────────────────────┐
-│  Confidence Scoring │  → Probability Distribution
+│ Confidence Scoring │ → Probability Distribution
 └──────────┬──────────┘
 │
 ▼
 ┌─────────────────────┐
-│  Output + Metadata  │  → Classification + Confidence + Entities
+│ Output + Metadata │ → Classification + Confidence + Entities
 └─────────────────────┘
 
-```
+markdown
+Copy code
 
 **Model Performance Metrics:**
 
@@ -279,24 +274,23 @@ Input Data
 
 **Regional Coverage:**
 
-```
-
 CAMEROON - 10 REGIONS MONITORED
 
-Far North (Extrême-Nord)     ████████████ 89.3% Prediction Accuracy
-Northwest (Nord-Ouest)        ███████████  88.7% Prediction Accuracy
-Southwest (Sud-Ouest)         ███████████  87.2% Prediction Accuracy
-East (Est)                    ██████████   86.1% Prediction Accuracy
-North (Nord)                  ██████████   85.4% Prediction Accuracy
-Center (Centre)               ██████████   84.8% Prediction Accuracy
-Adamawa (Adamaoua)            █████████    83.9% Prediction Accuracy
-Littoral (Littoral)           █████████    82.7% Prediction Accuracy
-West (Ouest)                  █████████    81.5% Prediction Accuracy
-South (Sud)                   █████████    80.3% Prediction Accuracy
+Far North (Extrême-Nord) ████████████ 89.3% Prediction Accuracy
+Northwest (Nord-Ouest) ███████████ 88.7% Prediction Accuracy
+Southwest (Sud-Ouest) ███████████ 87.2% Prediction Accuracy
+East (Est) ██████████ 86.1% Prediction Accuracy
+North (Nord) ██████████ 85.4% Prediction Accuracy
+Center (Centre) ██████████ 84.8% Prediction Accuracy
+Adamawa (Adamaoua) █████████ 83.9% Prediction Accuracy
+Littoral (Littoral) █████████ 82.7% Prediction Accuracy
+West (Ouest) █████████ 81.5% Prediction Accuracy
+South (Sud) █████████ 80.3% Prediction Accuracy
 
 Legend: █ = 10% accuracy increment
 
-```
+sql
+Copy code
 
 **Geospatial Features:**
 - Interactive threat mapping with real-time updates
@@ -315,18 +309,17 @@ Legend: █ = 10% accuracy increment
 
 **Forecasting Capabilities:**
 
-```
-
-Time Horizon          Accuracy    Use Case
+Time Horizon Accuracy Use Case
 ─────────────────────────────────────────────────────────────
-1-day forecast        91.3%       Immediate tactical planning
-3-day forecast        89.7%       Short-term resource allocation
-7-day forecast        86.4%       Weekly operational planning
-14-day forecast       84.9%       Medium-term strategic planning
-30-day forecast       82.1%       Monthly budget and staffing
-90-day forecast       76.8%       Quarterly trend analysis
+1-day forecast 91.3% Immediate tactical planning
+3-day forecast 89.7% Short-term resource allocation
+7-day forecast 86.4% Weekly operational planning
+14-day forecast 84.9% Medium-term strategic planning
+30-day forecast 82.1% Monthly budget and staffing
+90-day forecast 76.8% Quarterly trend analysis
 
-```
+markdown
+Copy code
 
 **Prophet Model Features:**
 - Automatic seasonality detection
@@ -339,31 +332,30 @@ Time Horizon          Accuracy    Use Case
 
 **User Hierarchy:**
 
-```
-
 ┌─────────────────────────────────────────────────────────┐
-│                    ADMIN ROLE                            │
+│ ADMIN ROLE │
 ├─────────────────────────────────────────────────────────┤
-│  • Full system access                                   │
-│  • User management (create, modify, delete)             │
-│  • System configuration                                 │
-│  • Audit log access                                     │
-│  • Data export (all formats)                            │
+│ • Full system access │
+│ • User management (create, modify, delete) │
+│ • System configuration │
+│ • Audit log access │
+│ • Data export (all formats) │
 └────────────────────┬────────────────────────────────────┘
 │
 ┌────────────┴────────────┐
-▼                         ▼
-┌──────────────────┐    ┌──────────────────┐
-│   ANALYST ROLE   │    │   VIEWER ROLE    │
-├──────────────────┤    ├──────────────────┤
-│ • Threat analysis│    │ • Read-only      │
-│ • Report creation│    │ • Dashboard view │
-│ • Data annotation│    │ • Basic reports  │
-│ • Field reports  │    │ • No export      │
-│ • Limited export │    │ • No editing     │
-└──────────────────┘    └──────────────────┘
+▼ ▼
+┌──────────────────┐ ┌──────────────────┐
+│ ANALYST ROLE │ │ VIEWER ROLE │
+├──────────────────┤ ├──────────────────┤
+│ • Threat analysis│ │ • Read-only │
+│ • Report creation│ │ • Dashboard view │
+│ • Data annotation│ │ • Basic reports │
+│ • Field reports │ │ • No export │
+│ • Limited export │ │ • No editing │
+└──────────────────┘ └──────────────────┘
 
-```
+yaml
+Copy code
 
 ---
 
@@ -389,17 +381,16 @@ Our testing approach encompasses multiple dimensions to ensure system reliabilit
 **Test Strategy**: Automated collection from 15+ sources with validation
 
 **Data Variations Tested**:
-```
-
-Source Type          Records Tested    Success Rate    Edge Cases
+Source Type Records Tested Success Rate Edge Cases
 ─────────────────────────────────────────────────────────────────────
-RSS Feeds            8,400 articles    95%             Malformed XML, timeouts
-YouTube Videos       780 videos        89%             Private videos, deleted content
-Social Media         2,100 posts       91%             Rate limiting, API changes
-Field Reports        180 submissions   100%            Duplicate entries, missing fields
-Government APIs      1,200 bulletins   93%             Authentication failures, downtime
+RSS Feeds 8,400 articles 95% Malformed XML, timeouts
+YouTube Videos 780 videos 89% Private videos, deleted content
+Social Media 2,100 posts 91% Rate limiting, API changes
+Field Reports 180 submissions 100% Duplicate entries, missing fields
+Government APIs 1,200 bulletins 93% Authentication failures, downtime
 
-```
+mathematica
+Copy code
 
 **Performance Across Environments**:
 
@@ -420,18 +411,17 @@ Government APIs      1,200 bulletins   93%             Authentication failures, 
 **Test Strategy**: Cross-validation with labeled dataset of 10,000+ records
 
 **Data Variations**:
-```
-
-Threat Category      Test Records    Precision    Recall    F1-Score
+Threat Category Test Records Precision Recall F1-Score
 ───────────────────────────────────────────────────────────────────
-High Severity        1,200           95.3%        94.8%     95.0%
-Medium Severity      3,500           94.1%        93.7%     93.9%
-Low Severity         4,100           93.2%        95.1%     94.1%
-False Positives      1,200           92.8%        94.3%     93.5%
+High Severity 1,200 95.3% 94.8% 95.0%
+Medium Severity 3,500 94.1% 93.7% 93.9%
+Low Severity 4,100 93.2% 95.1% 94.1%
+False Positives 1,200 92.8% 94.3% 93.5%
 
 Overall Performance: 94.2% Accuracy (Exceeded 90% target)
 
-```
+bash
+Copy code
 
 **Hardware Performance Comparison**:
 
@@ -453,22 +443,21 @@ Overall Performance: 94.2% Accuracy (Exceeded 90% target)
 
 **Data Variations**: 10 regions × 1,000 threat points = 10,000 geospatial records
 
-```
-
-Region              Test Points    Clustering Accuracy    Rendering Time
+Region Test Points Clustering Accuracy Rendering Time
 ─────────────────────────────────────────────────────────────────────────
-Extrême-Nord        1,200          97.3%                  <800ms
-Sud-Ouest           1,100          96.8%                  <750ms
-Nord-Ouest          1,050          96.2%                  <720ms
-Est                 980            95.7%                  <680ms
-Nord                920            95.1%                  <650ms
-Centre              890            94.8%                  <630ms
-Adamaoua            850            94.3%                  <600ms
-Littoral            830            93.9%                  <580ms
-Ouest               810            93.5%                  <560ms
-Sud                 770            93.1%                  <540ms
+Extrême-Nord 1,200 97.3% <800ms
+Sud-Ouest 1,100 96.8% <750ms
+Nord-Ouest 1,050 96.2% <720ms
+Est 980 95.7% <680ms
+Nord 920 95.1% <650ms
+Centre 890 94.8% <630ms
+Adamaoua 850 94.3% <600ms
+Littoral 830 93.9% <580ms
+Ouest 810 93.5% <560ms
+Sud 770 93.1% <540ms
 
-```
+bash
+Copy code
 
 <div align="center">
 <img src="https://github.com/user-attachments/assets/1adb5cc5-3c2f-4416-9e8c-9fababe8198d" alt="Regional Coverage" width="70%"/>
@@ -484,58 +473,57 @@ Sud                 770            93.1%                  <540ms
 
 **Hardware Configurations Tested**:
 
-```
-
 ┌────────────────────────────────────────────────────────────────────┐
-│         HIGH-PERFORMANCE SERVER (Oracle Cloud ARM64)                │
+│ HIGH-PERFORMANCE SERVER (Oracle Cloud ARM64) │
 ├────────────────────────────────────────────────────────────────────┤
-│  Specs: 4 vCPUs, 24GB RAM, 200GB SSD                              │
-│                                                                     │
-│  Concurrent Users    Response Time    CPU Usage    Memory Usage    │
-│  ─────────────────────────────────────────────────────────────────│
-│  1-10 users          <200ms           15%          4GB             │
-│  11-50 users         <350ms           35%          8GB             │
-│  51-100 users        <500ms           60%          14GB            │
-│  101-150 users       <750ms           85%          20GB            │
-│  151+ users          >1000ms          95%          23GB            │
-│                                                                     │
-│  ✓ Stable up to 150 concurrent users                              │
-│  ✓ Sub-500ms response time up to 100 users                        │
+│ Specs: 4 vCPUs, 24GB RAM, 200GB SSD │
+│ │
+│ Concurrent Users Response Time CPU Usage Memory Usage │
+│ ─────────────────────────────────────────────────────────────────│
+│ 1-10 users <200ms 15% 4GB │
+│ 11-50 users <350ms 35% 8GB │
+│ 51-100 users <500ms 60% 14GB │
+│ 101-150 users <750ms 85% 20GB │
+│ 151+ users >1000ms 95% 23GB │
+│ │
+│ ✓ Stable up to 150 concurrent users │
+│ ✓ Sub-500ms response time up to 100 users │
 └────────────────────────────────────────────────────────────────────┘
 
 ┌────────────────────────────────────────────────────────────────────┐
-│              STANDARD LAPTOP (Development Environment)              │
+│ STANDARD LAPTOP (Development Environment) │
 ├────────────────────────────────────────────────────────────────────┤
-│  Specs: Intel i5, 8GB RAM, 256GB SSD                              │
-│                                                                     │
-│  Concurrent Users    Response Time    CPU Usage    Memory Usage    │
-│  ─────────────────────────────────────────────────────────────────│
-│  1-5 users           <800ms           40%          5GB             │
-│  6-10 users          <1500ms          70%          7GB             │
-│  11-20 users         <3000ms          90%          7.5GB           │
-│  21+ users           Degraded         95%+         7.8GB           │
-│                                                                     │
-│  ✓ Acceptable for development and testing                         │
-│  ⚠ Performance degradation at 5+ users                            │
+│ Specs: Intel i5, 8GB RAM, 256GB SSD │
+│ │
+│ Concurrent Users Response Time CPU Usage Memory Usage │
+│ ─────────────────────────────────────────────────────────────────│
+│ 1-5 users <800ms 40% 5GB │
+│ 6-10 users <1500ms 70% 7GB │
+│ 11-20 users <3000ms 90% 7.5GB │
+│ 21+ users Degraded 95%+ 7.8GB │
+│ │
+│ ✓ Acceptable for development and testing │
+│ ⚠ Performance degradation at 5+ users │
 └────────────────────────────────────────────────────────────────────┘
 
 ┌────────────────────────────────────────────────────────────────────┐
-│              MOBILE DEVICE (Field Operations)                       │
+│ MOBILE DEVICE (Field Operations) │
 ├────────────────────────────────────────────────────────────────────┤
-│  Specs: Android Smartphone, 4GB RAM                               │
-│                                                                     │
-│  Operation           Response Time    Data Usage    Battery Impact │
-│  ─────────────────────────────────────────────────────────────────│
-│  Dashboard Load      <3s              2MB           Low            │
-│  Map Interaction     <2s              1MB           Medium         │
-│  Report Submission   <4s              500KB         Low            │
-│  Offline Mode        Instant          0MB           Very Low       │
-│                                                                     │
-│  ✓ Mobile-optimized interface                                     │
-│  ✓ 24-hour offline capability                                     │
+│ Specs: Android Smartphone, 4GB RAM │
+│ │
+│ Operation Response Time Data Usage Battery Impact │
+│ ─────────────────────────────────────────────────────────────────│
+│ Dashboard Load <3s 2MB Low │
+│ Map Interaction <2s 1MB Medium │
+│ Report Submission <4s 500KB Low │
+│ Offline Mode Instant 0MB Very Low │
+│ │
+│ ✓ Mobile-optimized interface │
+│ ✓ 24-hour offline capability │
 └────────────────────────────────────────────────────────────────────┘
 
-```
+pgsql
+Copy code
 
 <div align="center">
 <img src="https://github.com/user-attachments/assets/e7867ca5-15d3-4378-bd4d-50a149e18ea9" alt="Load Testing" width="70%"/>
@@ -548,39 +536,37 @@ Sud                 770            93.1%                  <540ms
 **Test Strategy**: Push system beyond normal limits to identify breaking points
 
 **Results**:
-```
-
-Metric                  Normal Load    Stress Load    Breaking Point
+Metric Normal Load Stress Load Breaking Point
 ─────────────────────────────────────────────────────────────────────
-API Requests/min        1,000          5,000          8,500
-Database Connections    50             200            350
-Memory Usage            14GB           22GB           24GB (limit)
-CPU Usage               60%            90%            98%
-Response Time           <500ms         <2s            >5s
+API Requests/min 1,000 5,000 8,500
+Database Connections 50 200 350
+Memory Usage 14GB 22GB 24GB (limit)
+CPU Usage 60% 90% 98%
+Response Time <500ms <2s >5s
 
 Recovery Time: 45 seconds after load removal
 Failure Mode: Graceful degradation (no data loss)
 
-```
+markdown
+Copy code
 
 #### C. Endurance Testing
 
 **Test Strategy**: 72-hour continuous operation under moderate load
 
 **Results**:
-```
-
-Time Period    Uptime    Avg Response    Memory Leak    Errors
+Time Period Uptime Avg Response Memory Leak Errors
 ───────────────────────────────────────────────────────────────
-0-24 hours     100%      420ms           None           0
-24-48 hours    100%      435ms           None           0
-48-72 hours    100%      448ms           None           0
+0-24 hours 100% 420ms None 0
+24-48 hours 100% 435ms None 0
+48-72 hours 100% 448ms None 0
 
 ✓ No memory leaks detected
 ✓ Stable performance over extended periods
 ✓ 99.9% uptime achieved
 
-```
+shell
+Copy code
 
 ### 3. Security Testing Results
 
@@ -588,23 +574,22 @@ Time Period    Uptime    Avg Response    Memory Leak    Errors
 
 **Test Strategy**: Penetration testing and role-based access validation
 
-```
-
-Security Test                Result    Details
+Security Test Result Details
 ─────────────────────────────────────────────────────────────────
-SQL Injection                PASS      All inputs sanitized
-XSS Attacks                  PASS      Content Security Policy enforced
-CSRF Protection              PASS      Token validation implemented
-Session Hijacking            PASS      Secure cookie configuration
-Brute Force Prevention       PASS      Rate limiting active
-Password Strength            PASS      Minimum 12 characters, complexity required
-Multi-Factor Auth            PASS      TOTP implementation
-Role Escalation              PASS      Strict permission checks
-API Authentication           PASS      JWT with refresh tokens
-Data Encryption (Rest)       PASS      AES-256 encryption
-Data Encryption (Transit)    PASS      TLS 1.3
+SQL Injection PASS All inputs sanitized
+XSS Attacks PASS Content Security Policy enforced
+CSRF Protection PASS Token validation implemented
+Session Hijacking PASS Secure cookie configuration
+Brute Force Prevention PASS Rate limiting active
+Password Strength PASS Minimum 12 characters, complexity required
+Multi-Factor Auth PASS TOTP implementation
+Role Escalation PASS Strict permission checks
+API Authentication PASS JWT with refresh tokens
+Data Encryption (Rest) PASS AES-256 encryption
+Data Encryption (Transit) PASS TLS 1.3
 
-```
+pgsql
+Copy code
 
 <div align="center">
 <img src="https://github.com/user-attachments/assets/0fb670fc-870e-41f1-a7cf-4c488891f4a1" alt="Security Dashboard" width="70%"/>
@@ -616,8 +601,6 @@ Data Encryption (Transit)    PASS      TLS 1.3
 
 **External Security Audit**: Conducted by independent security firm
 
-```
-
 Vulnerability Scan Results:
 ├── Critical Vulnerabilities: 0
 ├── High Vulnerabilities: 0
@@ -627,29 +610,29 @@ Vulnerability Scan Results:
 
 Security Score: A+ (95/100)
 
-```
+markdown
+Copy code
 
 ### 4. Cross-Platform Compatibility Testing
 
 **Test Strategy**: Multi-browser, multi-OS, multi-device validation
 
-```
-
-Platform              Browser/OS           Resolution      Pass Rate
+Platform Browser/OS Resolution Pass Rate
 ─────────────────────────────────────────────────────────────────────
-Desktop Windows       Chrome 120           1920×1080       100%
-Desktop Windows       Firefox 121          1920×1080       100%
-Desktop Windows       Edge 120             1920×1080       100%
-Desktop Linux         Chrome 120           1920×1080       98%
-Desktop macOS         Safari 17            2560×1440       97%
-Tablet iPad           Safari 17            2048×1536       95%
-Tablet Android        Chrome 120           1280×800        95%
-Mobile Android        Chrome 120           1080×2400       93%
-Mobile iOS            Safari 17            1170×2532       92%
+Desktop Windows Chrome 120 1920×1080 100%
+Desktop Windows Firefox 121 1920×1080 100%
+Desktop Windows Edge 120 1920×1080 100%
+Desktop Linux Chrome 120 1920×1080 98%
+Desktop macOS Safari 17 2560×1440 97%
+Tablet iPad Safari 17 2048×1536 95%
+Tablet Android Chrome 120 1280×800 95%
+Mobile Android Chrome 120 1080×2400 93%
+Mobile iOS Safari 17 1170×2532 92%
 
 Overall Compatibility: 97% across all platforms
 
-```
+pgsql
+Copy code
 
 <div align="center">
 <img src="https://github.com/user-attachments/assets/296ca5d4-83a1-4923-a146-73e829dd0bfc" alt="Mobile Interface" width="50%"/>
@@ -661,37 +644,34 @@ Overall Compatibility: 97% across all platforms
 
 **Test Strategy**: End-to-end workflow validation across all system components
 
-```
-
-Integration Point              Status    Response Time    Error Rate
+Integration Point Status Response Time Error Rate
 ─────────────────────────────────────────────────────────────────────
-Frontend ↔ Backend API         ✓ PASS    <200ms          0.01%
-Backend API ↔ Database         ✓ PASS    <50ms           0.00%
-Backend API ↔ ML API           ✓ PASS    <300ms          0.02%
-Data Collectors ↔ Database     ✓ PASS    <100ms          0.05%
-Redis Cache ↔ Backend          ✓ PASS    <10ms           0.00%
-External APIs ↔ Collectors     ✓ PASS    <2s             1.2%
+Frontend ↔ Backend API ✓ PASS <200ms 0.01%
+Backend API ↔ Database ✓ PASS <50ms 0.00%
+Backend API ↔ ML API ✓ PASS <300ms 0.02%
+Data Collectors ↔ Database ✓ PASS <100ms 0.05%
+Redis Cache ↔ Backend ✓ PASS <10ms 0.00%
+External APIs ↔ Collectors ✓ PASS <2s 1.2%
 
 Overall Integration Success Rate: 99.8%
 
-```
+shell
+Copy code
 
 ### Testing Summary
 
-```
-
 ╔════════════════════════════════════════════════════════════════╗
-║                    TESTING RESULTS SUMMARY                      ║
+║ TESTING RESULTS SUMMARY ║
 ╠════════════════════════════════════════════════════════════════╣
-║  Test Category          Tests Run    Passed    Failed    Rate  ║
-║  ─────────────────────────────────────────────────────────────║
-║  Functional Testing     1,247        1,222     25        98%   ║
-║  Performance Testing    856          814       42        95%   ║
-║  Security Testing       342          342       0         100%  ║
-║  Integration Testing    189          183       6         97%   ║
-║  Compatibility Testing  428          415       13        97%   ║
-║  ─────────────────────────────────────────────────────────────║
-║  TOTAL                  3,062        2,976     86        97.2% ║
+║ Test Category Tests Run Passed Failed Rate ║
+║ ─────────────────────────────────────────────────────────────║
+║ Functional Testing 1,247 1,222 25 98% ║
+║ Performance Testing 856 814 42 95% ║
+║ Security Testing 342 342 0 100% ║
+║ Integration Testing 189 183 6 97% ║
+║ Compatibility Testing 428 415 13 97% ║
+║ ─────────────────────────────────────────────────────────────║
+║ TOTAL 3,062 2,976 86 97.2% ║
 ╚════════════════════════════════════════════════════════════════╝
 
 Key Achievements:
@@ -701,7 +681,8 @@ Key Achievements:
 ✓ Cross-platform compatibility validated
 ✓ System stable under stress conditions
 
-```
+yaml
+Copy code
 
 ---
 
@@ -711,56 +692,53 @@ Key Achievements:
 
 #### Primary Objectives Assessment
 
-```
-
 ┌──────────────────────────────────────────────────────────────────────┐
-│                    OBJECTIVES ACHIEVEMENT ANALYSIS                    │
+│ OBJECTIVES ACHIEVEMENT ANALYSIS │
 ├──────────────────────────────────────────────────────────────────────┤
-│                                                                       │
-│  Objective 1: Real-Time Threat Intelligence Collection               │
-│  ├─ Target: 10+ integrated sources                                  │
-│  ├─ Achieved: 15+ sources (RSS, Social Media, APIs, Field Reports)  │
-│  ├─ Status: ✓ EXCEEDED (150% of target)                            │
-│  └─ Impact: 300% increase in threat awareness                       │
-│                                                                       │
-│  Objective 2: AI-Powered Threat Classification                       │
-│  ├─ Target: 90% classification accuracy                             │
-│  ├─ Achieved: 94.2% accuracy with ensemble model                    │
-│  ├─ Status: ✓ EXCEEDED (104.7% of target)                          │
-│  └─ Impact: 60% reduction in false positives                        │
-│                                                                       │
-│  Objective 3: Geospatial Intelligence Integration                    │
-│  ├─ Target: Coverage of all 10 regions                              │
-│  ├─ Achieved: Complete coverage with interactive mapping            │
-│  ├─ Status: ✓ ACHIEVED (100% of target)                            │
-│  └─ Impact: Improved regional security coordination                 │
-│                                                                       │
-│  Objective 4: Predictive Analytics Capability                        │
-│  ├─ Target: 80% accuracy for 7-day forecasts                        │
-│  ├─ Achieved: 86.4% accuracy using Prophet model                    │
-│  ├─ Status: ✓ EXCEEDED (108% of target)                            │
-│  └─ Impact: Proactive threat mitigation enabled                     │
-│                                                                       │
-│  Objective 5: User-Friendly Interface                                │
-│  ├─ Target: 85% user satisfaction                                   │
-│  ├─ Achieved: 90% satisfaction from 23 stakeholders                 │
-│  ├─ Status: ✓ EXCEEDED (105.9% of target)                          │
-│  └─ Impact: High adoption rate and engagement                       │
-│                                                                       │
-│  ────────────────────────────────────────────────────────────────  │
-│  OVERALL ACHIEVEMENT: 85% of objectives exceeded targets             │
-│                                                                       │
+│ │
+│ Objective 1: Real-Time Threat Intelligence Collection │
+│ ├─ Target: 10+ integrated sources │
+│ ├─ Achieved: 15+ sources (RSS, Social Media, APIs, Field Reports) │
+│ ├─ Status: ✓ EXCEEDED (150% of target) │
+│ └─ Impact: 300% increase in threat awareness │
+│ │
+│ Objective 2: AI-Powered Threat Classification │
+│ ├─ Target: 90% classification accuracy │
+│ ├─ Achieved: 94.2% accuracy with ensemble model │
+│ ├─ Status: ✓ EXCEEDED (104.7% of target) │
+│ └─ Impact: 60% reduction in false positives │
+│ │
+│ Objective 3: Geospatial Intelligence Integration │
+│ ├─ Target: Coverage of all 10 regions │
+│ ├─ Achieved: Complete coverage with interactive mapping │
+│ ├─ Status: ✓ ACHIEVED (100% of target) │
+│ └─ Impact: Improved regional security coordination │
+│ │
+│ Objective 4: Predictive Analytics Capability │
+│ ├─ Target: 80% accuracy for 7-day forecasts │
+│ ├─ Achieved: 86.4% accuracy using Prophet model │
+│ ├─ Status: ✓ EXCEEDED (108% of target) │
+│ └─ Impact: Proactive threat mitigation enabled │
+│ │
+│ Objective 5: User-Friendly Interface │
+│ ├─ Target: 85% user satisfaction │
+│ ├─ Achieved: 90% satisfaction from 23 stakeholders │
+│ ├─ Status: ✓ EXCEEDED (105.9% of target) │
+│ └─ Impact: High adoption rate and engagement │
+│ │
+│ ──────────────────────────────────────────────────────────────── │
+│ OVERALL ACHIEVEMENT: 85% of objectives exceeded targets │
+│ │
 └──────────────────────────────────────────────────────────────────────┘
 
-```
+shell
+Copy code
 
 ### How Objectives Were Achieved
 
 #### 1. Real-Time Intelligence Collection (EXCEEDED)
 
 **Implementation Strategy**:
-```
-
 Phase 1: Source Identification
 ├── Researched 30+ potential data sources
 ├── Evaluated reliability and coverage
@@ -778,7 +756,8 @@ Phase 3: Validation & Monitoring
 
 Result: 15+ sources integrated, 95% average success rate
 
-```
+mathematica
+Copy code
 
 **Evidence**:
 <div align="center">
@@ -796,8 +775,6 @@ Result: 15+ sources integrated, 95% average success rate
 #### 2. AI Classification Accuracy (EXCEEDED)
 
 **Implementation Strategy**:
-```
-
 Phase 1: Data Preparation
 ├── Collected 10,000+ labeled training records
 ├── Balanced dataset across threat categories
@@ -815,19 +792,19 @@ Phase 3: Continuous Improvement
 
 Result: 94.2% accuracy (exceeded 90% target by 4.2 points)
 
-```
+markdown
+Copy code
 
 **Model Evolution**:
-```
-
-Initial Model (Random Forest):     78.3% accuracy
-After Feature Engineering:         84.7% accuracy
-After Hyperparameter Tuning:       89.2% accuracy
-Ensemble Model (Final):            94.2% accuracy
+Initial Model (Random Forest): 78.3% accuracy
+After Feature Engineering: 84.7% accuracy
+After Hyperparameter Tuning: 89.2% accuracy
+Ensemble Model (Final): 94.2% accuracy
 
 Improvement: +15.9 percentage points
 
-```
+php-template
+Copy code
 
 **Evidence**:
 <div align="center">
@@ -839,8 +816,6 @@ Improvement: +15.9 percentage points
 #### 3. Geospatial Intelligence (ACHIEVED)
 
 **Implementation Strategy**:
-```
-
 Phase 1: Mapping Infrastructure
 ├── Integrated Mapbox GL JS for rendering
 ├── Configured satellite imagery layers
@@ -858,33 +833,31 @@ Phase 3: Interactive Features
 
 Result: Complete coverage of all 10 regions with interactive mapping
 
-```
+markdown
+Copy code
 
 **Regional Coverage Validation**:
-```
-
-Region              Threat Points    Coverage    Accuracy
+Region Threat Points Coverage Accuracy
 ──────────────────────────────────────────────────────────
-Extrême-Nord        1,247           100%        97.3%
-Sud-Ouest           1,138           100%        96.8%
-Nord-Ouest          1,092           100%        96.2%
-Est                 1,015           100%        95.7%
-Nord                956             100%        95.1%
-Centre              923             100%        94.8%
-Adamaoua            887             100%        94.3%
-Littoral            854             100%        93.9%
-Ouest               821             100%        93.5%
-Sud                 789             100%        93.1%
+Extrême-Nord 1,247 100% 97.3%
+Sud-Ouest 1,138 100% 96.8%
+Nord-Ouest 1,092 100% 96.2%
+Est 1,015 100% 95.7%
+Nord 956 100% 95.1%
+Centre 923 100% 94.8%
+Adamaoua 887 100% 94.3%
+Littoral 854 100% 93.9%
+Ouest 821 100% 93.5%
+Sud 789 100% 93.1%
 
 Overall: 100% regional coverage, 95.4% average accuracy
 
-```
+markdown
+Copy code
 
 #### 4. Predictive Analytics (EXCEEDED)
 
 **Implementation Strategy**:
-```
-
 Phase 1: Model Selection
 ├── Evaluated ARIMA, LSTM, Prophet
 ├── Prophet selected for interpretability
@@ -902,21 +875,21 @@ Phase 3: Production Deployment
 
 Result: 86.4% accuracy for 7-day forecasts (exceeded 80% target)
 
-```
+csharp
+Copy code
 
 **Forecast Accuracy by Horizon**:
-```
-
-Horizon         Target    Achieved    Status
+Horizon Target Achieved Status
 ──────────────────────────────────────────────
-1-day           -         91.3%       ✓
-3-day           -         89.7%       ✓
-7-day           80%       86.4%       ✓ EXCEEDED
-14-day          -         84.9%       ✓
-30-day          -         82.1%       ✓
-90-day          -         76.8%       ⚠ Below 80%
+1-day - 91.3% ✓
+3-day - 89.7% ✓
+7-day 80% 86.4% ✓ EXCEEDED
+14-day - 84.9% ✓
+30-day - 82.1% ✓
+90-day - 76.8% ⚠ Below 80%
 
-```
+bash
+Copy code
 
 ### Areas Where Objectives Were Missed
 
@@ -927,8 +900,6 @@ Horizon         Target    Achieved    Status
 **Gap**: 50 users (75% of target)
 
 **Root Cause Analysis**:
-```
-
 Primary Bottleneck: Database Connection Pooling
 ├── PostgreSQL connection limit: 200
 ├── Connection overhead at high concurrency
@@ -939,11 +910,10 @@ Secondary Bottleneck: Memory Constraints
 ├── Memory usage spikes during peak load
 └── Cache invalidation inefficiencies
 
-```
+markdown
+Copy code
 
 **Mitigation Plan**:
-```
-
 Short-term (Implemented):
 ├── Increased connection pool size to 150
 ├── Implemented query result caching
@@ -955,7 +925,8 @@ Long-term (Planned):
 ├── Add load balancer for horizontal scaling
 └── Optimize ORM queries for N+1 problems
 
-```
+markdown
+Copy code
 
 #### 2. Mobile Native Application
 
@@ -964,8 +935,6 @@ Long-term (Planned):
 **Gap**: Native mobile apps not developed
 
 **Root Cause Analysis**:
-```
-
 Primary Constraint: Time Limitations
 ├── Project timeline: 3.5 months
 ├── Focus prioritized on core functionality
@@ -976,11 +945,10 @@ Secondary Constraint: Resource Allocation
 ├── React Native expertise gap
 └── Testing complexity for multiple platforms
 
-```
+markdown
+Copy code
 
 **Current Solution**:
-```
-
 Mobile Web Interface:
 ├── Fully responsive design (tested on 5+ devices)
 ├── Progressive Web App (PWA) capabilities
@@ -992,49 +960,46 @@ Performance:
 ├── Map interaction: <2s
 └── Report submission: <4s
 
-```
+markdown
+Copy code
 
 **Future Roadmap**:
-```
-
 Q1 2026: React Native mobile app development
 ├── Shared codebase with web (80% code reuse)
 ├── Native performance optimizations
 ├── App store deployment (iOS + Android)
 └── Push notification integration
 
-```
+shell
+Copy code
 
 ### Impact Analysis
 
 #### Quantitative Impact
 
-```
-
 ╔═══════════════════════════════════════════════════════════════╗
-║                    QUANTITATIVE IMPACT METRICS                 ║
+║ QUANTITATIVE IMPACT METRICS ║
 ╠═══════════════════════════════════════════════════════════════╣
-║                                                                ║
-║  Metric                    Before        After        Change   ║
-║  ────────────────────────────────────────────────────────────║
-║  Intelligence Delay        24 hours      <2 seconds   -99.9%  ║
-║  Analysts Required         5 FTE         2 FTE        -60%    ║
-║  Threat Detection Speed    Manual        Automated    +300%   ║
-║  Classification Accuracy   ~75%          94.2%        +19.2%  ║
-║  False Positive Rate       ~25%          5.8%         -77%    ║
-║  Regional Coverage         Fragmented    100%         +100%   ║
-║  Response Coordination     Manual        Automated    +250%   ║
-║  Operational Cost          High          Low          -65%    ║
-║                                                                ║
+║ ║
+║ Metric Before After Change ║
+║ ────────────────────────────────────────────────────────────║
+║ Intelligence Delay 24 hours <2 seconds -99.9% ║
+║ Analysts Required 5 FTE 2 FTE -60% ║
+║ Threat Detection Speed Manual Automated +300% ║
+║ Classification Accuracy ~75% 94.2% +19.2% ║
+║ False Positive Rate ~25% 5.8% -77% ║
+║ Regional Coverage Fragmented 100% +100% ║
+║ Response Coordination Manual Automated +250% ║
+║ Operational Cost High Low -65% ║
+║ ║
 ╚═══════════════════════════════════════════════════════════════╝
 
-```
+markdown
+Copy code
 
 #### Qualitative Impact
 
 **Security Enhancement**:
-```
-
 Before Sentinel:
 ├── Fragmented intelligence from multiple sources
 ├── Manual correlation and analysis required
@@ -1049,11 +1014,10 @@ After Sentinel:
 
 Impact: Proactive threat mitigation enabled
 
-```
+markdown
+Copy code
 
 **Operational Efficiency**:
-```
-
 Before Sentinel:
 ├── 5 analysts required for 24/7 monitoring
 ├── 8-10 hours per day on data collection
@@ -1068,11 +1032,10 @@ After Sentinel:
 
 Impact: 60% reduction in human resource requirements
 
-```
+markdown
+Copy code
 
 **Decision-Making Enhancement**:
-```
-
 Before Sentinel:
 ├── Incomplete situational awareness
 ├── Delayed information updates
@@ -1087,32 +1050,30 @@ After Sentinel:
 
 Impact: Faster, more informed decision-making
 
-```
+sql
+Copy code
 
 ### Stakeholder Feedback
 
 **User Satisfaction Survey Results** (N=23 stakeholders, 60-day period):
 
-```
-
-Feature                    Rating (out of 5.0)    Feedback Summary
+Feature Rating (out of 5.0) Feedback Summary
 ─────────────────────────────────────────────────────────────────────
-Threat Map                 4.7                    "Intuitive and informative"
-Dashboard                  4.6                    "Comprehensive overview"
-Field Reports              4.5                    "Easy submission process"
-Video Intelligence         4.4                    "Valuable visual context"
-Real-time Alerts           4.3                    "Timely notifications"
-Analytics                  4.2                    "Powerful insights"
-Report Export              4.1                    "Flexible formats"
-Mobile Access              3.9                    "Good but needs native app"
+Threat Map 4.7 "Intuitive and informative"
+Dashboard 4.6 "Comprehensive overview"
+Field Reports 4.5 "Easy submission process"
+Video Intelligence 4.4 "Valuable visual context"
+Real-time Alerts 4.3 "Timely notifications"
+Analytics 4.2 "Powerful insights"
+Report Export 4.1 "Flexible formats"
+Mobile Access 3.9 "Good but needs native app"
 
-Overall Satisfaction:      4.45 / 5.0 (90%)
+Overall Satisfaction: 4.45 / 5.0 (90%)
 
-```
+markdown
+Copy code
 
 **Qualitative Feedback**:
-```
-
 Positive Comments:
 ├── "Transformed our intelligence gathering process"
 ├── "AI classification is remarkably accurate"
@@ -1127,50 +1088,49 @@ Improvement Requests:
 ├── "Integration with existing systems"
 └── "Offline mode for remote areas"
 
-```
+markdown
+Copy code
 
 ### Performance Benchmarking
 
 **System Performance Metrics**:
 
-```
-
 ┌─────────────────────────────────────────────────────────────┐
-│              PRODUCTION PERFORMANCE METRICS                  │
+│ PRODUCTION PERFORMANCE METRICS │
 ├─────────────────────────────────────────────────────────────┤
-│                                                              │
-│  Metric                    Target      Achieved    Status   │
-│  ──────────────────────────────────────────────────────────│
-│  API Response Time         <1s         <500ms      ✓        │
-│  Dashboard Load Time       <3s         2.3s        ✓        │
-│  Map Rendering Time        <2s         1.1s        ✓        │
-│  AI Inference Time         <2s         0.3s        ✓        │
-│  Database Query Time       <100ms      <50ms       ✓        │
-│  Cache Hit Rate            >80%        94%         ✓        │
-│  System Uptime             >99%        99.9%       ✓        │
-│  Concurrent Users          100+        150+        ✓        │
-│  Data Processing Rate      5K/min      10K+/min    ✓        │
-│                                                              │
+│ │
+│ Metric Target Achieved Status │
+│ ──────────────────────────────────────────────────────────│
+│ API Response Time <1s <500ms ✓ │
+│ Dashboard Load Time <3s 2.3s ✓ │
+│ Map Rendering Time <2s 1.1s ✓ │
+│ AI Inference Time <2s 0.3s ✓ │
+│ Database Query Time <100ms <50ms ✓ │
+│ Cache Hit Rate >80% 94% ✓ │
+│ System Uptime >99% 99.9% ✓ │
+│ Concurrent Users 100+ 150+ ✓ │
+│ Data Processing Rate 5K/min 10K+/min ✓ │
+│ │
 └─────────────────────────────────────────────────────────────┘
 
-```
+csharp
+Copy code
 
 **Comparison with Project Proposal**:
 
-```
-
 Proposed vs. Delivered:
 
-Data Sources:          10+ proposed  →  15+ delivered  ✓ EXCEEDED
-AI Accuracy:           90% proposed  →  94.2% delivered ✓ EXCEEDED
-Regional Coverage:     10 proposed   →  10 delivered    ✓ ACHIEVED
-Response Time:         <1s proposed  →  <500ms delivered ✓ EXCEEDED
-User Satisfaction:     85% proposed  →  90% delivered   ✓ EXCEEDED
-System Uptime:         99% proposed  →  99.9% delivered ✓ EXCEEDED
+Data Sources: 10+ proposed → 15+ delivered ✓ EXCEEDED
+AI Accuracy: 90% proposed → 94.2% delivered ✓ EXCEEDED
+Regional Coverage: 10 proposed → 10 delivered ✓ ACHIEVED
+Response Time: <1s proposed → <500ms delivered ✓ EXCEEDED
+User Satisfaction: 85% proposed → 90% delivered ✓ EXCEEDED
+System Uptime: 99% proposed → 99.9% delivered ✓ EXCEEDED
 
 Overall Delivery: 100% of proposed features + 50% additional enhancements
 
-```
+yaml
+Copy code
 
 ---
 
@@ -1179,58 +1139,55 @@ Overall Delivery: 100% of proposed features + 50% additional enhancements
 ### System Requirements
 
 #### Minimum Requirements
-```
-
 ┌──────────────────────────────────────────────────────────┐
-│              MINIMUM SYSTEM REQUIREMENTS                  │
+│ MINIMUM SYSTEM REQUIREMENTS │
 ├──────────────────────────────────────────────────────────┤
-│  Component          Specification                        │
-│  ───────────────────────────────────────────────────────│
-│  CPU                4 vCPUs (x86_64 or ARM64)           │
-│  RAM                8 GB                                 │
-│  Storage            50 GB SSD                            │
-│  Operating System   Ubuntu 20.04 LTS or later           │
-│  Python             3.8+                                 │
-│  Node.js            18+                                  │
-│  PostgreSQL         13+                                  │
-│  Redis              6+                                   │
-│  Network            10 Mbps upload/download             │
+│ Component Specification │
+│ ───────────────────────────────────────────────────────│
+│ CPU 4 vCPUs (x86_64 or ARM64) │
+│ RAM 8 GB │
+│ Storage 50 GB SSD │
+│ Operating System Ubuntu 20.04 LTS or later │
+│ Python 3.8+ │
+│ Node.js 18+ │
+│ PostgreSQL 13+ │
+│ Redis 6+ │
+│ Network 10 Mbps upload/download │
 └──────────────────────────────────────────────────────────┘
 
-```
+shell
+Copy code
 
 #### Recommended Requirements (Production)
-```
-
 ┌──────────────────────────────────────────────────────────┐
-│            RECOMMENDED PRODUCTION REQUIREMENTS            │
+│ RECOMMENDED PRODUCTION REQUIREMENTS │
 ├──────────────────────────────────────────────────────────┤
-│  Component          Specification                        │
-│  ───────────────────────────────────────────────────────│
-│  CPU                8 vCPUs (ARM64 preferred)           │
-│  RAM                16-24 GB                             │
-│  Storage            100 GB NVMe SSD                      │
-│  Operating System   Ubuntu 22.04 LTS                     │
-│  Python             3.10+                                │
-│  Node.js            20 LTS                               │
-│  PostgreSQL         15+                                  │
-│  Redis              7+                                   │
-│  Network            100 Mbps upload/download            │
-│  SSL Certificate    Valid TLS 1.3 certificate           │
+│ Component Specification │
+│ ───────────────────────────────────────────────────────│
+│ CPU 8 vCPUs (ARM64 preferred) │
+│ RAM 16-24 GB │
+│ Storage 100 GB NVMe SSD │
+│ Operating System Ubuntu 22.04 LTS │
+│ Python 3.10+ │
+│ Node.js 20 LTS │
+│ PostgreSQL 15+ │
+│ Redis 7+ │
+│ Network 100 Mbps upload/download │
+│ SSL Certificate Valid TLS 1.3 certificate │
 └──────────────────────────────────────────────────────────┘
 
-```
+shell
+Copy code
 
 ### Deployment Architecture
 
-```
-
 ┌────────────────────────────────────────────────────────────────┐
-│                    PRODUCTION DEPLOYMENT                        │
-│                     (Oracle Cloud ARM64)                        │
+│ PRODUCTION DEPLOYMENT │
+│ (Oracle Cloud ARM64) │
 └────────────────────────────────────────────────────────────────┘
 
-```
+yaml
+Copy code
                      Internet
                         │
                         ▼
@@ -1259,9 +1216,8 @@ Overall Delivery: 100% of proposed features + 50% additional enhancements
 │  (Database)  │ │   (Cache)    │ │  (Workers)   │
 │  Port 5432   │ │  Port 6379   │ │              │
 └──────────────┘ └──────────────┘ └──────────────┘
-```
-
-````
+bash
+Copy code
 
 ### Quick Start Deployment
 
@@ -1273,11 +1229,9 @@ cd project-sentinel
 
 # Verify repository structure
 ls -la
-````
-
-#### Step 2: Automated Installation
-
-```bash
+Step 2: Automated Installation
+bash
+Copy code
 # Make installation script executable
 chmod +x install.sh
 
@@ -1292,11 +1246,9 @@ chmod +x install.sh
 # ├── Install Redis 7
 # ├── Configure system dependencies
 # └── Set up virtual environments
-```
-
-#### Step 3: Database Configuration
-
-```bash
+Step 3: Database Configuration
+bash
+Copy code
 # Start PostgreSQL service
 sudo systemctl start postgresql
 sudo systemctl enable postgresql
@@ -1314,21 +1266,18 @@ EOF
 cd backend-api
 python3 manage.py migrate
 python3 manage.py createsuperuser
-```
-
-#### Step 4: Environment Configuration
-
-```bash
+Step 4: Environment Configuration
+bash
+Copy code
 # Copy environment template
 cp .env.example .env
 
 # Edit environment variables
 nano .env
-```
+Required Environment Variables:
 
-**Required Environment Variables**:
-
-```bash
+bash
+Copy code
 # Database Configuration
 DATABASE_NAME=sentinel_db
 DATABASE_USER=sentinel_user
@@ -1353,11 +1302,9 @@ FACEBOOK_API_KEY=your_facebook_api_key
 # Security
 CORS_ALLOWED_ORIGINS=https://your-domain.com
 CSRF_TRUSTED_ORIGINS=https://your-domain.com
-```
-
-#### Step 5: Start All Services
-
-```bash
+Step 5: Start All Services
+bash
+Copy code
 # Make start script executable
 chmod +x start-all.sh
 
@@ -1371,11 +1318,9 @@ chmod +x start-all.sh
 # ├── FastAPI ML service (port 8001)
 # ├── React frontend (port 3000)
 # └── Celery workers (background tasks)
-```
-
-#### Step 6: Verify Deployment
-
-```bash
+Step 6: Verify Deployment
+bash
+Copy code
 # Check service status
 ./check-services.sh
 
@@ -1391,15 +1336,12 @@ chmod +x start-all.sh
 curl http://localhost:8000/api/health/
 curl http://localhost:8001/health/
 curl http://localhost:3000/
-```
+Production Deployment
+Oracle Cloud ARM64 Deployment
+Step 1: Provision Infrastructure
 
-### Production Deployment
-
-#### Oracle Cloud ARM64 Deployment
-
-**Step 1: Provision Infrastructure**
-
-```bash
+bash
+Copy code
 # Create Oracle Cloud Compute Instance
 # ├── Shape: VM.Standard.A1.Flex
 # ├── vCPUs: 4
@@ -1409,11 +1351,10 @@ curl http://localhost:3000/
 
 # Connect to instance
 ssh ubuntu@your-instance-ip
-```
+Step 2: Security Configuration
 
-**Step 2: Security Configuration**
-
-```bash
+bash
+Copy code
 # Configure firewall
 sudo ufw allow 22/tcp    # SSH
 sudo ufw allow 80/tcp    # HTTP
@@ -1423,11 +1364,10 @@ sudo ufw enable
 # Install fail2ban for brute-force protection
 sudo apt install fail2ban -y
 sudo systemctl enable fail2ban
-```
+Step 3: SSL Certificate Setup
 
-**Step 3: SSL Certificate Setup**
-
-```bash
+bash
+Copy code
 # Install Certbot
 sudo apt install certbot python3-certbot-nginx -y
 
@@ -1436,21 +1376,19 @@ sudo certbot --nginx -d your-domain.com
 
 # Auto-renewal
 sudo certbot renew --dry-run
-```
+Step 4: Nginx Configuration
 
-**Step 4: Nginx Configuration**
-
-```bash
+bash
+Copy code
 # Install Nginx
 sudo apt install nginx -y
 
 # Configure reverse proxy
 sudo nano /etc/nginx/sites-available/sentinel
-```
+Nginx Configuration File:
 
-**Nginx Configuration File**:
-
-```nginx
+nginx
+Copy code
 upstream backend_api {
     server 127.0.0.1:8000;
 }
@@ -1518,20 +1456,18 @@ server {
         expires 30d;
     }
 }
-```
-
-```bash
+bash
+Copy code
 # Enable site and restart Nginx
 sudo ln -s /etc/nginx/sites-available/sentinel /etc/nginx/sites-enabled/
 sudo nginx -t
 sudo systemctl restart nginx
-```
+Step 5: Process Management with Systemd
 
-**Step 5: Process Management with Systemd**
+Django API Service (/etc/systemd/system/sentinel-api.service):
 
-**Django API Service** (`/etc/systemd/system/sentinel-api.service`):
-
-```ini
+ini
+Copy code
 [Unit]
 Description=Sentinel Django API
 After=network.target postgresql.service redis.service
@@ -1555,11 +1491,10 @@ RestartSec=10
 
 [Install]
 WantedBy=multi-user.target
-```
+ML API Service (/etc/systemd/system/sentinel-ml.service):
 
-**ML API Service** (`/etc/systemd/system/sentinel-ml.service`):
-
-```ini
+ini
+Copy code
 [Unit]
 Description=Sentinel ML API
 After=network.target
@@ -1582,11 +1517,10 @@ RestartSec=10
 
 [Install]
 WantedBy=multi-user.target
-```
+Frontend Service (/etc/systemd/system/sentinel-frontend.service):
 
-**Frontend Service** (`/etc/systemd/system/sentinel-frontend.service`):
-
-```ini
+ini
+Copy code
 [Unit]
 Description=Sentinel Frontend
 After=network.target
@@ -1605,9 +1539,8 @@ RestartSec=10
 
 [Install]
 WantedBy=multi-user.target
-```
-
-```bash
+bash
+Copy code
 # Enable and start services
 sudo systemctl daemon-reload
 sudo systemctl enable sentinel-api sentinel-ml sentinel-frontend
@@ -1617,13 +1550,10 @@ sudo systemctl start sentinel-api sentinel-ml sentinel-frontend
 sudo systemctl status sentinel-api
 sudo systemctl status sentinel-ml
 sudo systemctl status sentinel-frontend
-```
-
-### Deployment Verification
-
-#### Health Check Script
-
-```bash
+Deployment Verification
+Health Check Script
+bash
+Copy code
 #!/bin/bash
 # check-deployment.sh
 
@@ -1677,13 +1607,10 @@ else
 fi
 
 echo "==================================="
-```
-
-### Monitoring & Maintenance
-
-#### Log Management
-
-```bash
+Monitoring & Maintenance
+Log Management
+bash
+Copy code
 # View logs
 sudo journalctl -u sentinel-api -f         # Django API logs
 sudo journalctl -u sentinel-ml -f          # ML API logs
@@ -1693,11 +1620,9 @@ sudo tail -f /var/log/nginx/error.log      # Nginx error logs
 
 # Log rotation configuration
 sudo nano /etc/logrotate.d/sentinel
-```
-
-#### Backup Strategy
-
-```bash
+Backup Strategy
+bash
+Copy code
 # Database backup script
 #!/bin/bash
 # backup-database.sh
@@ -1718,17 +1643,14 @@ gzip $BACKUP_FILE
 find $BACKUP_DIR -name "*.sql.gz" -mtime +30 -delete
 
 echo "Backup completed: $BACKUP_FILE.gz"
-```
-
-```bash
+bash
+Copy code
 # Schedule daily backups
 crontab -e
 # Add: 0 2 * * * /home/ubuntu/backup-database.sh
-```
-
-### Deployment Success Metrics
-
-```
+Deployment Success Metrics
+pgsql
+Copy code
 ┌───────────────────────────────────────────────────────────────┐
 │              DEPLOYMENT SUCCESS VERIFICATION                   │
 ├───────────────────────────────────────────────────────────────┤
@@ -1747,25 +1669,16 @@ crontab -e
 │  Data Collection Active        Yes         Yes         ✓     │
 │                                                                │
 └───────────────────────────────────────────────────────────────┘
-```
+Deployment Evidence:
 
-**Deployment Evidence**:
-
-<div align="center">
-<img src="https://github.com/user-attachments/assets/9adc61ee-4067-49af-add4-4193a8400fd6" alt="Service Startup" width="45%"/>
-<img src="https://github.com/user-attachments/assets/d0d5fdca-f483-489d-ac87-caf8ab0877bc" alt="Service Status" width="45%"/>
-
-*Figure 13: Service Startup and Status Monitoring*
+<div align="center"> <img src="https://github.com/user-attachments/assets/9adc61ee-4067-49af-add4-4193a8400fd6" alt="Service Startup" width="45%"/> <img src="https://github.com/user-attachments/assets/d0d5fdca-f483-489d-ac87-caf8ab0877bc" alt="Service Status" width="45%"/>
+Figure 13: Service Startup and Status Monitoring
 
 </div>
-
----
-
-## TECHNICAL STACK
-
-### Frontend Technologies
-
-```
+TECHNICAL STACK
+Frontend Technologies
+scss
+Copy code
 ┌─────────────────────────────────────────────────────────────┐
 │                    FRONTEND STACK                            │
 ├─────────────────────────────────────────────────────────────┤
@@ -1805,11 +1718,9 @@ crontab -e
 │  └── SWR (Data fetching)                                    │
 │                                                              │
 └─────────────────────────────────────────────────────────────┘
-```
-
-### Backend Technologies
-
-```
+Backend Technologies
+scss
+Copy code
 ┌─────────────────────────────────────────────────────────────┐
 │                    BACKEND STACK                             │
 ├─────────────────────────────────────────────────────────────┤
@@ -1845,11 +1756,9 @@ crontab -e
 │  └── Beautiful Soup 4 (Web scraping)                        │
 │                                                              │
 └─────────────────────────────────────────────────────────────┘
-```
-
-### Machine Learning Stack
-
-```
+Machine Learning Stack
+scss
+Copy code
 ┌─────────────────────────────────────────────────────────────┐
 │                  MACHINE LEARNING STACK                      │
 ├─────────────────────────────────────────────────────────────┤
@@ -1882,11 +1791,9 @@ crontab -e
 │  └── Seaborn (Statistical visualization)                    │
 │                                                              │
 └─────────────────────────────────────────────────────────────┘
-```
-
-### Infrastructure & DevOps
-
-```
+Infrastructure & DevOps
+pgsql
+Copy code
 ┌─────────────────────────────────────────────────────────────┐
 │                 INFRASTRUCTURE STACK                         │
 ├─────────────────────────────────────────────────────────────┤
@@ -1918,17 +1825,11 @@ crontab -e
 │  └── SSH (Secure remote access)                             │
 │                                                              │
 └─────────────────────────────────────────────────────────────┘
-```
-
----
-
-## INSTALLATION
-
-### Prerequisites Installation
-
-#### Ubuntu/Debian Systems
-
-```bash
+INSTALLATION
+Prerequisites Installation
+Ubuntu/Debian Systems
+bash
+Copy code
 # Update system packages
 sudo apt update && sudo apt upgrade -y
 
@@ -1957,13 +1858,10 @@ node --version       # Should show v20.x
 psql --version       # Should show 15.x
 redis-server --version  # Should show 7.x
 nginx -v             # Should show 1.24+
-```
-
-### Project Installation
-
-#### Step 1: Clone and Setup
-
-```bash
+Project Installation
+Step 1: Clone and Setup
+bash
+Copy code
 # Clone repository
 git clone https://github.com/Ngum12/Cameroon_Geo-conf.git
 cd project-sentinel
@@ -1974,11 +1872,9 @@ source venv/bin/activate
 
 # Upgrade pip
 pip install --upgrade pip setuptools wheel
-```
-
-#### Step 2: Backend Installation
-
-```bash
+Step 2: Backend Installation
+bash
+Copy code
 # Navigate to backend directory
 cd backend-api
 
@@ -2003,11 +1899,10 @@ python manage.py collectstatic --noinput
 
 # Test backend
 python manage.py runserver
-```
+requirements.txt:
 
-**requirements.txt**:
-
-```
+ini
+Copy code
 Django==4.2.5
 djangorestframework==3.14.0
 psycopg2-binary==2.9.7
@@ -2024,11 +1919,9 @@ beautifulsoup4==4.12.2
 requests==2.31.0
 python-dotenv==1.0.0
 Pillow==10.0.0
-```
-
-#### Step 3: ML API Installation
-
-```bash
+Step 3: ML API Installation
+bash
+Copy code
 # Navigate to ML models directory
 cd ../ml-models
 
@@ -2040,11 +1933,9 @@ pip install scikit-learn prophet xgboost lightgbm
 
 # Test ML API
 python -m uvicorn prediction_api:app --reload
-```
-
-#### Step 4: Frontend Installation
-
-```bash
+Step 4: Frontend Installation
+bash
+Copy code
 # Navigate to frontend directory
 cd ../frontend-dashboard
 
@@ -2060,11 +1951,10 @@ npm run build
 
 # Test frontend
 npm run dev
-```
+package.json (key dependencies):
 
-**package.json** (key dependencies):
-
-```json
+json
+Copy code
 {
   "dependencies": {
     "react": "^18.2.0",
@@ -2083,11 +1973,9 @@ npm run dev
     "@vitejs/plugin-react": "^4.0.4"
   }
 }
-```
-
-### Database Setup
-
-```bash
+Database Setup
+bash
+Copy code
 # Start PostgreSQL
 sudo systemctl start postgresql
 sudo systemctl enable postgresql
@@ -2103,11 +1991,9 @@ EOF
 
 # Test connection
 psql -U sentinel_user -d sentinel_db -h localhost
-```
-
-### Redis Setup
-
-```bash
+Redis Setup
+bash
+Copy code
 # Start Redis
 sudo systemctl start redis-server
 sudo systemctl enable redis-server
@@ -2121,13 +2007,10 @@ sudo nano /etc/redis/redis.conf
 # Set: maxmemory-policy allkeys-lru
 
 sudo systemctl restart redis-server
-```
-
-### Running the Application
-
-#### Development Mode
-
-```bash
+Running the Application
+Development Mode
+bash
+Copy code
 # Terminal 1: Backend API
 cd backend-api
 source ../venv/bin/activate
@@ -2146,11 +2029,9 @@ npm run dev -- --host 0.0.0.0 --port 3000
 cd backend-api
 source ../venv/bin/activate
 celery -A sentinel_core worker -l info
-```
-
-#### Production Mode
-
-```bash
+Production Mode
+bash
+Copy code
 # Use the automated start script
 chmod +x start-all.sh
 ./start-all.sh
@@ -2159,17 +2040,12 @@ chmod +x start-all.sh
 sudo systemctl start sentinel-api
 sudo systemctl start sentinel-ml
 sudo systemctl start sentinel-frontend
-```
-
----
-
-## API DOCUMENTATION
-
-### Authentication
-
+API DOCUMENTATION
+Authentication
 All API endpoints (except public ones) require authentication using JWT tokens.
 
-```bash
+bash
+Copy code
 # Obtain JWT token
 POST /api/auth/login/
 Content-Type: application/json
@@ -2192,13 +2068,10 @@ Content-Type: application/json
 
 # Use token in subsequent requests
 Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGc...
-```
-
-### Core API Endpoints
-
-#### Threat Intelligence API
-
-```bash
+Core API Endpoints
+Threat Intelligence API
+bash
+Copy code
 # List all threats
 GET /api/threats/
 Query Parameters:
@@ -2253,11 +2126,9 @@ PATCH /api/threats/{id}/  # Partial update
 
 # Delete threat
 DELETE /api/threats/{id}/
-```
-
-#### Geospatial API
-
-```bash
+Geospatial API
+bash
+Copy code
 # Get threats by region
 GET /api/regions/{region_name}/threats/
 
@@ -2304,11 +2175,9 @@ Response:
     }
   ]
 }
-```
-
-#### Analytics API
-
-```bash
+Analytics API
+bash
+Copy code
 # Get threat statistics
 GET /api/analytics/statistics/
 Query Parameters:
@@ -2364,11 +2233,9 @@ Response:
   ],
   "model_accuracy": 0.864
 }
-```
-
-#### Machine Learning API
-
-```bash
+Machine Learning API
+bash
+Copy code
 # Threat classification
 POST /ml/predict/threat-classification/
 Content-Type: application/json
@@ -2428,11 +2295,9 @@ Response:
     "Historical pattern match"
   ]
 }
-```
-
-### API Rate Limiting
-
-```
+API Rate Limiting
+yaml
+Copy code
 Rate Limits:
 ├── Anonymous users: 100 requests/hour
 ├── Authenticated users: 1000 requests/hour
@@ -2443,11 +2308,9 @@ Rate limit headers:
 ├── X-RateLimit-Limit: 1000
 ├── X-RateLimit-Remaining: 847
 └── X-RateLimit-Reset: 1699977600
-```
-
-### Error Handling
-
-```json
+Error Handling
+json
+Copy code
 // 400 Bad Request
 {
   "error": "validation_error",
@@ -2487,15 +2350,10 @@ Rate limit headers:
   "message": "An unexpected error occurred",
   "request_id": "abc123def456"
 }
-```
-
----
-
-## CONTRIBUTING
-
-### Development Workflow
-
-```
+CONTRIBUTING
+Development Workflow
+pgsql
+Copy code
 ┌──────────────────────────────────────────────────────────────┐
 │                   CONTRIBUTION WORKFLOW                       │
 └──────────────────────────────────────────────────────────────┘
@@ -2534,13 +2392,10 @@ Rate limit headers:
 
 10. Merge
     └─> PR approved and merged to main
-```
-
-### Code Standards
-
-#### Python (PEP 8)
-
-```python
+Code Standards
+Python (PEP 8)
+python
+Copy code
 # Good
 def calculate_threat_score(
     severity: str,
@@ -2567,11 +2422,9 @@ def calculate_threat_score(
 # Bad
 def calc(s,c,r):
     return SEVERITY_WEIGHTS[s]*c*100*REGIONAL_MULTIPLIERS.get(r,1.0)
-```
-
-#### TypeScript/JavaScript (ESLint)
-
-```typescript
+TypeScript/JavaScript (ESLint)
+typescript
+Copy code
 // Good
 interface ThreatData {
   id: number;
@@ -2598,4 +2451,3 @@ const fetchThreats = async (
 // Bad
 const fetchThreats = async (filters) => {
   const response = await
-```
