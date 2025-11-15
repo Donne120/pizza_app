@@ -1,5 +1,3 @@
-Perfect! Here's your groundbreaking README. Just copy and paste this:
-
 ```markdown
 <div align="center">
 
@@ -73,6 +71,7 @@ Cameroon faces complex security challenges including the Anglophone crisis, Boko
 Project Sentinel addresses these challenges through:
 
 ```
+
 ┌─────────────────────────────────────────────────────────────────┐
 │  BEFORE SENTINEL          →          AFTER SENTINEL             │
 ├─────────────────────────────────────────────────────────────────┤
@@ -82,6 +81,7 @@ Project Sentinel addresses these challenges through:
 │  Fragmented data sources     →  15+ integrated sources          │
 │  Reactive response           →  Predictive threat forecasting   │
 └─────────────────────────────────────────────────────────────────┘
+
 ```
 
 **Quantifiable Impact:**
@@ -97,6 +97,7 @@ Project Sentinel addresses these challenges through:
 ### High-Level Architecture
 
 ```
+
 ┌────────────────────────────────────────────────────────────────────────┐
 │                         PROJECT SENTINEL ARCHITECTURE                   │
 └────────────────────────────────────────────────────────────────────────┘
@@ -107,10 +108,10 @@ Project Sentinel addresses these challenges through:
 │  RSS Feeds   │ Social Media │   News APIs  │ Field Reports│  YouTube   │
 │  (12 sources)│  (Twitter/FB)│ (3 govt APIs)│  (Manual)    │ (Channels) │
 └──────┬───────┴──────┬───────┴──────┬───────┴──────┬───────┴──────┬─────┘
-       │              │              │              │              │
-       └──────────────┴──────────────┴──────────────┴──────────────┘
-                                     │
-                                     ▼
+│              │              │              │              │
+└──────────────┴──────────────┴──────────────┴──────────────┘
+│
+▼
 ┌─────────────────────────────────────────────────────────────────────────┐
 │                        PROCESSING & ANALYSIS LAYER                       │
 ├─────────────────────────────────────────────────────────────────────────┤
@@ -119,8 +120,8 @@ Project Sentinel addresses these challenges through:
 │  │  (Sentiment) │  │  (94.2% acc) │  │   Analysis   │  │ Forecasting ││
 │  └──────────────┘  └──────────────┘  └──────────────┘  └─────────────┘│
 └─────────────────────────────────────────────────────────────────────────┘
-                                     │
-                                     ▼
+│
+▼
 ┌─────────────────────────────────────────────────────────────────────────┐
 │                          DATA STORAGE LAYER                              │
 ├─────────────────────────────────────────────────────────────────────────┤
@@ -129,8 +130,8 @@ Project Sentinel addresses these challenges through:
 │  │  (Primary DB)    │         │  (Caching/Queue) │                     │
 │  └──────────────────┘         └──────────────────┘                     │
 └─────────────────────────────────────────────────────────────────────────┘
-                                     │
-                                     ▼
+│
+▼
 ┌─────────────────────────────────────────────────────────────────────────┐
 │                        APPLICATION LAYER                                 │
 ├─────────────────────────────────────────────────────────────────────────┤
@@ -139,8 +140,8 @@ Project Sentinel addresses these challenges through:
 │  │  (Port 8000)     │         │  (Port 8001)     │                     │
 │  └──────────────────┘         └──────────────────┘                     │
 └─────────────────────────────────────────────────────────────────────────┘
-                                     │
-                                     ▼
+│
+▼
 ┌─────────────────────────────────────────────────────────────────────────┐
 │                        PRESENTATION LAYER                                │
 ├─────────────────────────────────────────────────────────────────────────┤
@@ -151,6 +152,7 @@ Project Sentinel addresses these challenges through:
 │  │  └──────────┘  └──────────┘  └──────────┘  └──────────┘      │    │
 │  └────────────────────────────────────────────────────────────────┘    │
 └─────────────────────────────────────────────────────────────────────────┘
+
 ```
 
 <div align="center">
@@ -189,6 +191,7 @@ The system employs a microservices architecture for scalability, fault isolation
 **Integrated Data Sources:**
 
 ```
+
 RSS Feeds (12 sources)
 ├── Government News Portals
 ├── Regional Security Bulletins
@@ -209,6 +212,7 @@ Manual Intelligence
 ├── Field Reports (Analyst Submission)
 ├── Citizen Tips (Secure Portal)
 └── Inter-Agency Sharing
+
 ```
 
 **Collection Performance:**
@@ -222,36 +226,38 @@ Manual Intelligence
 **Machine Learning Pipeline:**
 
 ```
+
 ┌──────────────────────────────────────────────────────────────┐
 │                    ML PROCESSING PIPELINE                     │
 └──────────────────────────────────────────────────────────────┘
 
 Input Data
-    │
-    ▼
+│
+▼
 ┌─────────────────────┐
 │  Text Preprocessing │  → Tokenization, Normalization, Cleaning
 └──────────┬──────────┘
-           │
-           ▼
+│
+▼
 ┌─────────────────────┐
 │  NLP Analysis       │  → Sentiment, Entity Recognition, Language
 └──────────┬──────────┘
-           │
-           ▼
+│
+▼
 ┌─────────────────────┐
 │  Threat Classifier  │  → Random Forest, SVM, Neural Networks
 └──────────┬──────────┘    (94.2% Accuracy)
-           │
-           ▼
+│
+▼
 ┌─────────────────────┐
 │  Confidence Scoring │  → Probability Distribution
 └──────────┬──────────┘
-           │
-           ▼
+│
+▼
 ┌─────────────────────┐
 │  Output + Metadata  │  → Classification + Confidence + Entities
 └─────────────────────┘
+
 ```
 
 **Model Performance Metrics:**
@@ -274,6 +280,7 @@ Input Data
 **Regional Coverage:**
 
 ```
+
 CAMEROON - 10 REGIONS MONITORED
 
 Far North (Extrême-Nord)     ████████████ 89.3% Prediction Accuracy
@@ -288,6 +295,7 @@ West (Ouest)                  █████████    81.5% Prediction Ac
 South (Sud)                   █████████    80.3% Prediction Accuracy
 
 Legend: █ = 10% accuracy increment
+
 ```
 
 **Geospatial Features:**
@@ -308,6 +316,7 @@ Legend: █ = 10% accuracy increment
 **Forecasting Capabilities:**
 
 ```
+
 Time Horizon          Accuracy    Use Case
 ─────────────────────────────────────────────────────────────
 1-day forecast        91.3%       Immediate tactical planning
@@ -316,6 +325,7 @@ Time Horizon          Accuracy    Use Case
 14-day forecast       84.9%       Medium-term strategic planning
 30-day forecast       82.1%       Monthly budget and staffing
 90-day forecast       76.8%       Quarterly trend analysis
+
 ```
 
 **Prophet Model Features:**
@@ -330,6 +340,7 @@ Time Horizon          Accuracy    Use Case
 **User Hierarchy:**
 
 ```
+
 ┌─────────────────────────────────────────────────────────┐
 │                    ADMIN ROLE                            │
 ├─────────────────────────────────────────────────────────┤
@@ -339,9 +350,9 @@ Time Horizon          Accuracy    Use Case
 │  • Audit log access                                     │
 │  • Data export (all formats)                            │
 └────────────────────┬────────────────────────────────────┘
-                     │
-        ┌────────────┴────────────┐
-        ▼                         ▼
+│
+┌────────────┴────────────┐
+▼                         ▼
 ┌──────────────────┐    ┌──────────────────┐
 │   ANALYST ROLE   │    │   VIEWER ROLE    │
 ├──────────────────┤    ├──────────────────┤
@@ -351,6 +362,7 @@ Time Horizon          Accuracy    Use Case
 │ • Field reports  │    │ • No export      │
 │ • Limited export │    │ • No editing     │
 └──────────────────┘    └──────────────────┘
+
 ```
 
 ---
@@ -378,6 +390,7 @@ Our testing approach encompasses multiple dimensions to ensure system reliabilit
 
 **Data Variations Tested**:
 ```
+
 Source Type          Records Tested    Success Rate    Edge Cases
 ─────────────────────────────────────────────────────────────────────
 RSS Feeds            8,400 articles    95%             Malformed XML, timeouts
@@ -385,6 +398,7 @@ YouTube Videos       780 videos        89%             Private videos, deleted c
 Social Media         2,100 posts       91%             Rate limiting, API changes
 Field Reports        180 submissions   100%            Duplicate entries, missing fields
 Government APIs      1,200 bulletins   93%             Authentication failures, downtime
+
 ```
 
 **Performance Across Environments**:
@@ -407,6 +421,7 @@ Government APIs      1,200 bulletins   93%             Authentication failures, 
 
 **Data Variations**:
 ```
+
 Threat Category      Test Records    Precision    Recall    F1-Score
 ───────────────────────────────────────────────────────────────────
 High Severity        1,200           95.3%        94.8%     95.0%
@@ -415,6 +430,7 @@ Low Severity         4,100           93.2%        95.1%     94.1%
 False Positives      1,200           92.8%        94.3%     93.5%
 
 Overall Performance: 94.2% Accuracy (Exceeded 90% target)
+
 ```
 
 **Hardware Performance Comparison**:
@@ -438,6 +454,7 @@ Overall Performance: 94.2% Accuracy (Exceeded 90% target)
 **Data Variations**: 10 regions × 1,000 threat points = 10,000 geospatial records
 
 ```
+
 Region              Test Points    Clustering Accuracy    Rendering Time
 ─────────────────────────────────────────────────────────────────────────
 Extrême-Nord        1,200          97.3%                  <800ms
@@ -450,6 +467,7 @@ Adamaoua            850            94.3%                  <600ms
 Littoral            830            93.9%                  <580ms
 Ouest               810            93.5%                  <560ms
 Sud                 770            93.1%                  <540ms
+
 ```
 
 <div align="center">
@@ -467,6 +485,7 @@ Sud                 770            93.1%                  <540ms
 **Hardware Configurations Tested**:
 
 ```
+
 ┌────────────────────────────────────────────────────────────────────┐
 │         HIGH-PERFORMANCE SERVER (Oracle Cloud ARM64)                │
 ├────────────────────────────────────────────────────────────────────┤
@@ -515,6 +534,7 @@ Sud                 770            93.1%                  <540ms
 │  ✓ Mobile-optimized interface                                     │
 │  ✓ 24-hour offline capability                                     │
 └────────────────────────────────────────────────────────────────────┘
+
 ```
 
 <div align="center">
@@ -529,6 +549,7 @@ Sud                 770            93.1%                  <540ms
 
 **Results**:
 ```
+
 Metric                  Normal Load    Stress Load    Breaking Point
 ─────────────────────────────────────────────────────────────────────
 API Requests/min        1,000          5,000          8,500
@@ -539,6 +560,7 @@ Response Time           <500ms         <2s            >5s
 
 Recovery Time: 45 seconds after load removal
 Failure Mode: Graceful degradation (no data loss)
+
 ```
 
 #### C. Endurance Testing
@@ -547,6 +569,7 @@ Failure Mode: Graceful degradation (no data loss)
 
 **Results**:
 ```
+
 Time Period    Uptime    Avg Response    Memory Leak    Errors
 ───────────────────────────────────────────────────────────────
 0-24 hours     100%      420ms           None           0
@@ -556,6 +579,7 @@ Time Period    Uptime    Avg Response    Memory Leak    Errors
 ✓ No memory leaks detected
 ✓ Stable performance over extended periods
 ✓ 99.9% uptime achieved
+
 ```
 
 ### 3. Security Testing Results
@@ -565,6 +589,7 @@ Time Period    Uptime    Avg Response    Memory Leak    Errors
 **Test Strategy**: Penetration testing and role-based access validation
 
 ```
+
 Security Test                Result    Details
 ─────────────────────────────────────────────────────────────────
 SQL Injection                PASS      All inputs sanitized
@@ -578,6 +603,7 @@ Role Escalation              PASS      Strict permission checks
 API Authentication           PASS      JWT with refresh tokens
 Data Encryption (Rest)       PASS      AES-256 encryption
 Data Encryption (Transit)    PASS      TLS 1.3
+
 ```
 
 <div align="center">
@@ -591,6 +617,7 @@ Data Encryption (Transit)    PASS      TLS 1.3
 **External Security Audit**: Conducted by independent security firm
 
 ```
+
 Vulnerability Scan Results:
 ├── Critical Vulnerabilities: 0
 ├── High Vulnerabilities: 0
@@ -599,6 +626,7 @@ Vulnerability Scan Results:
 └── Informational: 12
 
 Security Score: A+ (95/100)
+
 ```
 
 ### 4. Cross-Platform Compatibility Testing
@@ -606,6 +634,7 @@ Security Score: A+ (95/100)
 **Test Strategy**: Multi-browser, multi-OS, multi-device validation
 
 ```
+
 Platform              Browser/OS           Resolution      Pass Rate
 ─────────────────────────────────────────────────────────────────────
 Desktop Windows       Chrome 120           1920×1080       100%
@@ -619,6 +648,7 @@ Mobile Android        Chrome 120           1080×2400       93%
 Mobile iOS            Safari 17            1170×2532       92%
 
 Overall Compatibility: 97% across all platforms
+
 ```
 
 <div align="center">
@@ -632,6 +662,7 @@ Overall Compatibility: 97% across all platforms
 **Test Strategy**: End-to-end workflow validation across all system components
 
 ```
+
 Integration Point              Status    Response Time    Error Rate
 ─────────────────────────────────────────────────────────────────────
 Frontend ↔ Backend API         ✓ PASS    <200ms          0.01%
@@ -642,11 +673,13 @@ Redis Cache ↔ Backend          ✓ PASS    <10ms           0.00%
 External APIs ↔ Collectors     ✓ PASS    <2s             1.2%
 
 Overall Integration Success Rate: 99.8%
+
 ```
 
 ### Testing Summary
 
 ```
+
 ╔════════════════════════════════════════════════════════════════╗
 ║                    TESTING RESULTS SUMMARY                      ║
 ╠════════════════════════════════════════════════════════════════╣
@@ -667,6 +700,7 @@ Key Achievements:
 ✓ Performance targets exceeded on production hardware
 ✓ Cross-platform compatibility validated
 ✓ System stable under stress conditions
+
 ```
 
 ---
@@ -678,6 +712,7 @@ Key Achievements:
 #### Primary Objectives Assessment
 
 ```
+
 ┌──────────────────────────────────────────────────────────────────────┐
 │                    OBJECTIVES ACHIEVEMENT ANALYSIS                    │
 ├──────────────────────────────────────────────────────────────────────┤
@@ -716,6 +751,7 @@ Key Achievements:
 │  OVERALL ACHIEVEMENT: 85% of objectives exceeded targets             │
 │                                                                       │
 └──────────────────────────────────────────────────────────────────────┘
+
 ```
 
 ### How Objectives Were Achieved
@@ -724,6 +760,7 @@ Key Achievements:
 
 **Implementation Strategy**:
 ```
+
 Phase 1: Source Identification
 ├── Researched 30+ potential data sources
 ├── Evaluated reliability and coverage
@@ -740,6 +777,7 @@ Phase 3: Validation & Monitoring
 └── Performance monitoring dashboard
 
 Result: 15+ sources integrated, 95% average success rate
+
 ```
 
 **Evidence**:
@@ -759,6 +797,7 @@ Result: 15+ sources integrated, 95% average success rate
 
 **Implementation Strategy**:
 ```
+
 Phase 1: Data Preparation
 ├── Collected 10,000+ labeled training records
 ├── Balanced dataset across threat categories
@@ -775,16 +814,19 @@ Phase 3: Continuous Improvement
 └── A/B testing for model updates
 
 Result: 94.2% accuracy (exceeded 90% target by 4.2 points)
+
 ```
 
 **Model Evolution**:
 ```
+
 Initial Model (Random Forest):     78.3% accuracy
 After Feature Engineering:         84.7% accuracy
 After Hyperparameter Tuning:       89.2% accuracy
 Ensemble Model (Final):            94.2% accuracy
 
 Improvement: +15.9 percentage points
+
 ```
 
 **Evidence**:
@@ -798,6 +840,7 @@ Improvement: +15.9 percentage points
 
 **Implementation Strategy**:
 ```
+
 Phase 1: Mapping Infrastructure
 ├── Integrated Mapbox GL JS for rendering
 ├── Configured satellite imagery layers
@@ -814,10 +857,12 @@ Phase 3: Interactive Features
 └── Historical overlay capabilities
 
 Result: Complete coverage of all 10 regions with interactive mapping
+
 ```
 
 **Regional Coverage Validation**:
 ```
+
 Region              Threat Points    Coverage    Accuracy
 ──────────────────────────────────────────────────────────
 Extrême-Nord        1,247           100%        97.3%
@@ -832,12 +877,14 @@ Ouest               821             100%        93.5%
 Sud                 789             100%        93.1%
 
 Overall: 100% regional coverage, 95.4% average accuracy
+
 ```
 
 #### 4. Predictive Analytics (EXCEEDED)
 
 **Implementation Strategy**:
 ```
+
 Phase 1: Model Selection
 ├── Evaluated ARIMA, LSTM, Prophet
 ├── Prophet selected for interpretability
@@ -854,10 +901,12 @@ Phase 3: Production Deployment
 └── Alert generation for anomalies
 
 Result: 86.4% accuracy for 7-day forecasts (exceeded 80% target)
+
 ```
 
 **Forecast Accuracy by Horizon**:
 ```
+
 Horizon         Target    Achieved    Status
 ──────────────────────────────────────────────
 1-day           -         91.3%       ✓
@@ -866,6 +915,7 @@ Horizon         Target    Achieved    Status
 14-day          -         84.9%       ✓
 30-day          -         82.1%       ✓
 90-day          -         76.8%       ⚠ Below 80%
+
 ```
 
 ### Areas Where Objectives Were Missed
@@ -878,6 +928,7 @@ Horizon         Target    Achieved    Status
 
 **Root Cause Analysis**:
 ```
+
 Primary Bottleneck: Database Connection Pooling
 ├── PostgreSQL connection limit: 200
 ├── Connection overhead at high concurrency
@@ -887,10 +938,12 @@ Secondary Bottleneck: Memory Constraints
 ├── 24GB RAM limit on current infrastructure
 ├── Memory usage spikes during peak load
 └── Cache invalidation inefficiencies
+
 ```
 
 **Mitigation Plan**:
 ```
+
 Short-term (Implemented):
 ├── Increased connection pool size to 150
 ├── Implemented query result caching
@@ -901,6 +954,7 @@ Long-term (Planned):
 ├── Implement database sharding
 ├── Add load balancer for horizontal scaling
 └── Optimize ORM queries for N+1 problems
+
 ```
 
 #### 2. Mobile Native Application
@@ -911,6 +965,7 @@ Long-term (Planned):
 
 **Root Cause Analysis**:
 ```
+
 Primary Constraint: Time Limitations
 ├── Project timeline: 3.5 months
 ├── Focus prioritized on core functionality
@@ -920,10 +975,12 @@ Secondary Constraint: Resource Allocation
 ├── Single developer on frontend
 ├── React Native expertise gap
 └── Testing complexity for multiple platforms
+
 ```
 
 **Current Solution**:
 ```
+
 Mobile Web Interface:
 ├── Fully responsive design (tested on 5+ devices)
 ├── Progressive Web App (PWA) capabilities
@@ -934,15 +991,18 @@ Performance:
 ├── Dashboard load: <3s on 4G
 ├── Map interaction: <2s
 └── Report submission: <4s
+
 ```
 
 **Future Roadmap**:
 ```
+
 Q1 2026: React Native mobile app development
 ├── Shared codebase with web (80% code reuse)
 ├── Native performance optimizations
 ├── App store deployment (iOS + Android)
 └── Push notification integration
+
 ```
 
 ### Impact Analysis
@@ -950,6 +1010,7 @@ Q1 2026: React Native mobile app development
 #### Quantitative Impact
 
 ```
+
 ╔═══════════════════════════════════════════════════════════════╗
 ║                    QUANTITATIVE IMPACT METRICS                 ║
 ╠═══════════════════════════════════════════════════════════════╣
@@ -966,12 +1027,14 @@ Q1 2026: React Native mobile app development
 ║  Operational Cost          High          Low          -65%    ║
 ║                                                                ║
 ╚═══════════════════════════════════════════════════════════════╝
+
 ```
 
 #### Qualitative Impact
 
 **Security Enhancement**:
 ```
+
 Before Sentinel:
 ├── Fragmented intelligence from multiple sources
 ├── Manual correlation and analysis required
@@ -985,10 +1048,12 @@ After Sentinel:
 └── 7-day predictive forecasting (86.4% accuracy)
 
 Impact: Proactive threat mitigation enabled
+
 ```
 
 **Operational Efficiency**:
 ```
+
 Before Sentinel:
 ├── 5 analysts required for 24/7 monitoring
 ├── 8-10 hours per day on data collection
@@ -1002,10 +1067,12 @@ After Sentinel:
 └── 5-6 hours per day for strategic work
 
 Impact: 60% reduction in human resource requirements
+
 ```
 
 **Decision-Making Enhancement**:
 ```
+
 Before Sentinel:
 ├── Incomplete situational awareness
 ├── Delayed information updates
@@ -1019,6 +1086,7 @@ After Sentinel:
 └── AI-powered trend analysis and forecasting
 
 Impact: Faster, more informed decision-making
+
 ```
 
 ### Stakeholder Feedback
@@ -1026,6 +1094,7 @@ Impact: Faster, more informed decision-making
 **User Satisfaction Survey Results** (N=23 stakeholders, 60-day period):
 
 ```
+
 Feature                    Rating (out of 5.0)    Feedback Summary
 ─────────────────────────────────────────────────────────────────────
 Threat Map                 4.7                    "Intuitive and informative"
@@ -1038,10 +1107,12 @@ Report Export              4.1                    "Flexible formats"
 Mobile Access              3.9                    "Good but needs native app"
 
 Overall Satisfaction:      4.45 / 5.0 (90%)
+
 ```
 
 **Qualitative Feedback**:
 ```
+
 Positive Comments:
 ├── "Transformed our intelligence gathering process"
 ├── "AI classification is remarkably accurate"
@@ -1055,6 +1126,7 @@ Improvement Requests:
 ├── "More customizable dashboard widgets"
 ├── "Integration with existing systems"
 └── "Offline mode for remote areas"
+
 ```
 
 ### Performance Benchmarking
@@ -1062,6 +1134,7 @@ Improvement Requests:
 **System Performance Metrics**:
 
 ```
+
 ┌─────────────────────────────────────────────────────────────┐
 │              PRODUCTION PERFORMANCE METRICS                  │
 ├─────────────────────────────────────────────────────────────┤
@@ -1079,11 +1152,13 @@ Improvement Requests:
 │  Data Processing Rate      5K/min      10K+/min    ✓        │
 │                                                              │
 └─────────────────────────────────────────────────────────────┘
+
 ```
 
 **Comparison with Project Proposal**:
 
 ```
+
 Proposed vs. Delivered:
 
 Data Sources:          10+ proposed  →  15+ delivered  ✓ EXCEEDED
@@ -1094,6 +1169,7 @@ User Satisfaction:     85% proposed  →  90% delivered   ✓ EXCEEDED
 System Uptime:         99% proposed  →  99.9% delivered ✓ EXCEEDED
 
 Overall Delivery: 100% of proposed features + 50% additional enhancements
+
 ```
 
 ---
@@ -1104,6 +1180,7 @@ Overall Delivery: 100% of proposed features + 50% additional enhancements
 
 #### Minimum Requirements
 ```
+
 ┌──────────────────────────────────────────────────────────┐
 │              MINIMUM SYSTEM REQUIREMENTS                  │
 ├──────────────────────────────────────────────────────────┤
@@ -1119,10 +1196,12 @@ Overall Delivery: 100% of proposed features + 50% additional enhancements
 │  Redis              6+                                   │
 │  Network            10 Mbps upload/download             │
 └──────────────────────────────────────────────────────────┘
+
 ```
 
 #### Recommended Requirements (Production)
 ```
+
 ┌──────────────────────────────────────────────────────────┐
 │            RECOMMENDED PRODUCTION REQUIREMENTS            │
 ├──────────────────────────────────────────────────────────┤
@@ -1139,45 +1218,50 @@ Overall Delivery: 100% of proposed features + 50% additional enhancements
 │  Network            100 Mbps upload/download            │
 │  SSL Certificate    Valid TLS 1.3 certificate           │
 └──────────────────────────────────────────────────────────┘
+
 ```
 
 ### Deployment Architecture
 
 ```
+
 ┌────────────────────────────────────────────────────────────────┐
 │                    PRODUCTION DEPLOYMENT                        │
 │                     (Oracle Cloud ARM64)                        │
 └────────────────────────────────────────────────────────────────┘
 
-                         Internet
-                            │
-                            ▼
-                    ┌───────────────┐
-                    │   Nginx       │  Port 80/443
-                    │   (Reverse    │  SSL Termination
-                    │    Proxy)     │  Load Balancing
-                    └───────┬───────┘
-                            │
-            ┌───────────────┼───────────────┐
-            │               │               │
-            ▼               ▼               ▼
-    ┌──────────────┐ ┌──────────────┐ ┌──────────────┐
-    │   Frontend   │ │  Backend API │ │   ML API     │
-    │   (React)    │ │  (Django)    │ │  (FastAPI)   │
-    │   Port 3000  │ │  Port 8000   │ │  Port 8001   │
-    └──────┬───────┘ └──────┬───────┘ └──────┬───────┘
-           │                │                 │
-           └────────────────┼─────────────────┘
-                            │
-            ┌───────────────┼───────────────┐
-            │               │               │
-            ▼               ▼               ▼
-    ┌──────────────┐ ┌──────────────┐ ┌──────────────┐
-    │  PostgreSQL  │ │    Redis     │ │   Celery     │
-    │  (Database)  │ │   (Cache)    │ │  (Workers)   │
-    │  Port 5432   │ │  Port 6379   │ │              │
-    └──────────────┘ └──────────────┘ └──────────────┘
 ```
+                     Internet
+                        │
+                        ▼
+                ┌───────────────┐
+                │   Nginx       │  Port 80/443
+                │   (Reverse    │  SSL Termination
+                │    Proxy)     │  Load Balancing
+                └───────┬───────┘
+                        │
+        ┌───────────────┼───────────────┐
+        │               │               │
+        ▼               ▼               ▼
+┌──────────────┐ ┌──────────────┐ ┌──────────────┐
+│   Frontend   │ │  Backend API │ │   ML API     │
+│   (React)    │ │  (Django)    │ │  (FastAPI)   │
+│   Port 3000  │ │  Port 8000   │ │  Port 8001   │
+└──────┬───────┘ └──────┬───────┘ └──────┬───────┘
+       │                │                 │
+       └────────────────┼─────────────────┘
+                        │
+        ┌───────────────┼───────────────┐
+        │               │               │
+        ▼               ▼               ▼
+┌──────────────┐ ┌──────────────┐ ┌──────────────┐
+│  PostgreSQL  │ │    Redis     │ │   Celery     │
+│  (Database)  │ │   (Cache)    │ │  (Workers)   │
+│  Port 5432   │ │  Port 6379   │ │              │
+└──────────────┘ └──────────────┘ └──────────────┘
+```
+
+````
 
 ### Quick Start Deployment
 
@@ -1189,9 +1273,10 @@ cd project-sentinel
 
 # Verify repository structure
 ls -la
-```
+````
 
 #### Step 2: Automated Installation
+
 ```bash
 # Make installation script executable
 chmod +x install.sh
@@ -1210,6 +1295,7 @@ chmod +x install.sh
 ```
 
 #### Step 3: Database Configuration
+
 ```bash
 # Start PostgreSQL service
 sudo systemctl start postgresql
@@ -1231,6 +1317,7 @@ python3 manage.py createsuperuser
 ```
 
 #### Step 4: Environment Configuration
+
 ```bash
 # Copy environment template
 cp .env.example .env
@@ -1240,6 +1327,7 @@ nano .env
 ```
 
 **Required Environment Variables**:
+
 ```bash
 # Database Configuration
 DATABASE_NAME=sentinel_db
@@ -1268,6 +1356,7 @@ CSRF_TRUSTED_ORIGINS=https://your-domain.com
 ```
 
 #### Step 5: Start All Services
+
 ```bash
 # Make start script executable
 chmod +x start-all.sh
@@ -1285,6 +1374,7 @@ chmod +x start-all.sh
 ```
 
 #### Step 6: Verify Deployment
+
 ```bash
 # Check service status
 ./check-services.sh
@@ -1308,6 +1398,7 @@ curl http://localhost:3000/
 #### Oracle Cloud ARM64 Deployment
 
 **Step 1: Provision Infrastructure**
+
 ```bash
 # Create Oracle Cloud Compute Instance
 # ├── Shape: VM.Standard.A1.Flex
@@ -1321,6 +1412,7 @@ ssh ubuntu@your-instance-ip
 ```
 
 **Step 2: Security Configuration**
+
 ```bash
 # Configure firewall
 sudo ufw allow 22/tcp    # SSH
@@ -1334,6 +1426,7 @@ sudo systemctl enable fail2ban
 ```
 
 **Step 3: SSL Certificate Setup**
+
 ```bash
 # Install Certbot
 sudo apt install certbot python3-certbot-nginx -y
@@ -1346,6 +1439,7 @@ sudo certbot renew --dry-run
 ```
 
 **Step 4: Nginx Configuration**
+
 ```bash
 # Install Nginx
 sudo apt install nginx -y
@@ -1355,6 +1449,7 @@ sudo nano /etc/nginx/sites-available/sentinel
 ```
 
 **Nginx Configuration File**:
+
 ```nginx
 upstream backend_api {
     server 127.0.0.1:8000;
@@ -1435,6 +1530,7 @@ sudo systemctl restart nginx
 **Step 5: Process Management with Systemd**
 
 **Django API Service** (`/etc/systemd/system/sentinel-api.service`):
+
 ```ini
 [Unit]
 Description=Sentinel Django API
@@ -1462,6 +1558,7 @@ WantedBy=multi-user.target
 ```
 
 **ML API Service** (`/etc/systemd/system/sentinel-ml.service`):
+
 ```ini
 [Unit]
 Description=Sentinel ML API
@@ -1488,6 +1585,7 @@ WantedBy=multi-user.target
 ```
 
 **Frontend Service** (`/etc/systemd/system/sentinel-frontend.service`):
+
 ```ini
 [Unit]
 Description=Sentinel Frontend
@@ -1524,6 +1622,7 @@ sudo systemctl status sentinel-frontend
 ### Deployment Verification
 
 #### Health Check Script
+
 ```bash
 #!/bin/bash
 # check-deployment.sh
@@ -1583,6 +1682,7 @@ echo "==================================="
 ### Monitoring & Maintenance
 
 #### Log Management
+
 ```bash
 # View logs
 sudo journalctl -u sentinel-api -f         # Django API logs
@@ -1596,6 +1696,7 @@ sudo nano /etc/logrotate.d/sentinel
 ```
 
 #### Backup Strategy
+
 ```bash
 # Database backup script
 #!/bin/bash
@@ -1649,11 +1750,13 @@ crontab -e
 ```
 
 **Deployment Evidence**:
+
 <div align="center">
 <img src="https://github.com/user-attachments/assets/9adc61ee-4067-49af-add4-4193a8400fd6" alt="Service Startup" width="45%"/>
 <img src="https://github.com/user-attachments/assets/d0d5fdca-f483-489d-ac87-caf8ab0877bc" alt="Service Status" width="45%"/>
 
 *Figure 13: Service Startup and Status Monitoring*
+
 </div>
 
 ---
@@ -1824,6 +1927,7 @@ crontab -e
 ### Prerequisites Installation
 
 #### Ubuntu/Debian Systems
+
 ```bash
 # Update system packages
 sudo apt update && sudo apt upgrade -y
@@ -1858,6 +1962,7 @@ nginx -v             # Should show 1.24+
 ### Project Installation
 
 #### Step 1: Clone and Setup
+
 ```bash
 # Clone repository
 git clone https://github.com/Ngum12/Cameroon_Geo-conf.git
@@ -1872,6 +1977,7 @@ pip install --upgrade pip setuptools wheel
 ```
 
 #### Step 2: Backend Installation
+
 ```bash
 # Navigate to backend directory
 cd backend-api
@@ -1900,6 +2006,7 @@ python manage.py runserver
 ```
 
 **requirements.txt**:
+
 ```
 Django==4.2.5
 djangorestframework==3.14.0
@@ -1920,6 +2027,7 @@ Pillow==10.0.0
 ```
 
 #### Step 3: ML API Installation
+
 ```bash
 # Navigate to ML models directory
 cd ../ml-models
@@ -1935,6 +2043,7 @@ python -m uvicorn prediction_api:app --reload
 ```
 
 #### Step 4: Frontend Installation
+
 ```bash
 # Navigate to frontend directory
 cd ../frontend-dashboard
@@ -1954,6 +2063,7 @@ npm run dev
 ```
 
 **package.json** (key dependencies):
+
 ```json
 {
   "dependencies": {
@@ -2016,6 +2126,7 @@ sudo systemctl restart redis-server
 ### Running the Application
 
 #### Development Mode
+
 ```bash
 # Terminal 1: Backend API
 cd backend-api
@@ -2038,6 +2149,7 @@ celery -A sentinel_core worker -l info
 ```
 
 #### Production Mode
+
 ```bash
 # Use the automated start script
 chmod +x start-all.sh
@@ -2427,6 +2539,7 @@ Rate limit headers:
 ### Code Standards
 
 #### Python (PEP 8)
+
 ```python
 # Good
 def calculate_threat_score(
@@ -2457,6 +2570,7 @@ def calc(s,c,r):
 ```
 
 #### TypeScript/JavaScript (ESLint)
+
 ```typescript
 // Good
 interface ThreatData {
@@ -2484,3 +2598,4 @@ const fetchThreats = async (
 // Bad
 const fetchThreats = async (filters) => {
   const response = await
+```
